@@ -1,0 +1,70 @@
+---
+---
+<!DOCTYPE html>
+<html>
+
+{% include head.html %}
+
+<body class="PageHome">
+<script src="http://www.youtube.com/iframe_api"></script>
+<script src="{{ site.baseurl }}/jquery.fullPage.min.js"></script>
+
+<section class="main">
+  <div class="SnapPlayer">
+    <div id="player"></div>
+    <div class="overlay"></div>
+  </div>
+  <main>
+    <h1>Brazil Club at Yale</h1>
+    <p>
+      The BCY is the community of Brazilian undergraduate students at Yale University.
+    </p>
+    <p>
+      <a href="http://facebook.com/brazilclubatyale">Check out BCY's Facebook to see what we're up to</a>
+    </p>
+    <ul class="team">
+      {% for pessoa in site.data.team %}
+      <li>
+        <div style="background-image: url({{ site.baseurl }}{{ pessoa.picture }})"></div>
+      </li>
+      {% endfor %}
+    </ul>
+  </main>
+</section>
+
+<div class="borderTop">
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+
+<!--
+<section class="about">
+  <aside class="fullHeight">
+    <div class="bg-wrapper">
+      <canvas class="blur" src="{{ site.baseurl }}/images/backgrounds/7.jpg" data-blur="0"></canvas>
+      <div class="blackout"></div>
+    </div>
+  </aside>
+
+  <main>
+    <h1>Membros</h1>
+  </main>
+</section>
+-->
+
+<script src="{{ site.baseurl }}/snaps.js"></script>
+<script src="{{ site.baseurl }}/blur.js"></script>
+
+<script>
+$(document).ready(function() {
+  // $(window).resize(function () {
+  //   $("section, .fullHeight").css({ minHeight: $(window).outerHeight()-5 });
+  // });
+
+  // $("section, .fullHeight").css({ minHeight: $(window).outerHeight()-10 });
+});
+</script>
+</body>
+</html>

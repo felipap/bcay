@@ -1,0 +1,248 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+
+
+// Our variables
+$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-font-size:   16px;
+$base-font-weight: 400;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$spacing-unit:     30px;
+
+$text-color:       #111;
+$background-color: #fdfdfd;
+$brand-color:      #2a7ae2;
+
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+// Width of the content area
+$content-width:    800px;
+
+$on-palm:          600px;
+$on-laptop:        800px;
+
+
+
+// Use media queries like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+.bg-wrapper {
+  position: absolute;
+  z-index: -1;
+  background: #FFFFFF no-repeat center bottom;
+  background-clip: content-box;
+  top: 0; bottom: 0;
+  width: 100%;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  img {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    -webkit-filter: blur(1px);
+    filter: blur(1px);
+    width: 100%;
+
+    background: #fff no-repeat center bottom fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+    
+  canvas.blur {
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+  }
+
+  .blackout {
+    z-index: -1;
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: black;
+    opacity: .3;
+  }
+}
+
+$color-beige: #E8B884;
+$color-green: #206964;
+
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "base",
+        "layout",
+        "syntax-highlighting"
+;
+
+.borderTop {
+  display: table;
+  width: 100%;
+  height: 10px;
+  position: fixed;
+  bottom: 0;
+
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+
+  & > div {
+    -webkit-flex: 1;
+    flex: 1;
+  }
+  
+  & > div:nth-child(1) { background: #416CB1; }
+  & > div:nth-child(2) { background: #FCD111; }
+  & > div:nth-child(3) { background: #37C56B; }
+  & > div:nth-child(4) { background: #135728; }
+
+  
+  /*& > div:nth-child(2) { background: #61A363 }*/
+  /*& > div:nth-child(3) { background: #9CB95A }*/
+  /*& > div:nth-child(4) { background: #D1CD52 }*/
+}
+
+section {
+  overflow: hidden;
+}
+
+section.main {
+  width: 800px;
+  margin: auto;
+  display: table;
+  position: relative;
+  margin-top: 20px;
+
+  font-family: "Avenir", sans-serif;
+
+  .SnapPlayer {
+    float: left;
+  }
+
+  main {
+    top: 30px;
+    position: relative;
+    padding-left: 420px;
+
+    h1 {
+      font-weight: 400;
+    }
+
+    p {
+      font-size: 16px;
+    }
+
+    .team {
+      list-style: none;
+      margin-left: 0;
+      margin-top: 10px;
+      
+      li {
+        display: inline-block;
+        $dim: 60px;
+
+        div {
+          width: $dim;
+          height: $dim;
+          border-radius: $dim;
+          
+          /*border-radius: $img-size;*/
+          background-position: center;
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          background-size: cover;
+        }
+      }
+    }
+  }
+}
+
+section.about {
+  overflow: hidden;
+  
+  aside {
+    position: relative;
+    width: 40%;
+    float: left;
+    overflow: hidden;
+  }
+
+  main {
+    margin-left: 40%;
+    padding-left: 50px;
+  }
+}
+
+.SnapPlayer {
+  position: relative;
+  overflow: hidden;
+  
+  $border-height: 25px;
+
+  #player {
+    margin-top: -35px;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    cursor: pointer;
+    border-bottom: 50px solid white;
+  }
+}
+
+
+@media screen and (max-width: $on-laptop) {
+}
+
+@media screen and (min-width: $on-laptop) {
+}
+
+
+.background {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+
+  background: #fff no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+

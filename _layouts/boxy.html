@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+    {% include background.html %}
+
+    <div class="page-content">
+      <div class="box-wrapper box-{{ page.box-layout }}">
+        {{ content }}
+      </div>
+    </div>
+
+  </body>
+</html>

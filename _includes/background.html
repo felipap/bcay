@@ -1,0 +1,24 @@
+
+{% comment %}
+
+  Hack to get random array element in Jekyll.
+  See http://ephotopros.com/2015/jekyll-randomizer-for-ads/.
+
+  {% for bg in site.data.bgs %}
+    <link rel="prefetch" href="{{ site.baseurl }}{{ bg.src }}" />
+  {% endfor %}
+
+  {% assign hours = site.time | date: "%S" | plus:100 %}
+  {% assign random = page.name.size+page.name | plus: hours | modulo: site.data.bgs.size %}
+  <div class="background" style="background-image: url({{ site.data.bgs[random].src | prepend: site.baseurl }})"></div>
+
+{% endcomment %}
+
+<script>
+
+  var bgs = {{ site.data.bgs | jsonify }};
+  var randIndex = Math.floor(Math.random()*bgs.length);
+  document.write('<div class="background" style="background-image: url({{ site.baseurl }}'+bgs[randIndex].src+')"></div>');
+  document.write('<div class="background-credits">picture by '+bgs[randIndex].credits+'</div>');
+
+</script>
