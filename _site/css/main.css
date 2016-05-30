@@ -652,8 +652,10 @@ section.about {
       background: rgba(0, 0, 0, 0.4);
       padding: 10px 20px;
       color: white;
-      transition: .1s all linear; }
-  .SnapPlayer:hover .overlay .text {
+      transition: .5s all linear; }
+  .SnapPlayer:hover .overlay .text,
+  .SnapPlayer .overlay.show .text {
+    transition: .1s all linear;
     opacity: 1; }
 
 .background {

@@ -29,7 +29,7 @@
 <section class="main">
   <div class="SnapPlayer">
     <div id="player"></div>
-    <div class="overlay">
+    <div class="overlay show">
       <div class="text">
         m (mute)<br />space (pause)
       </div>
@@ -210,6 +210,10 @@ $(function() {
       showPerson(hash)
     }, 1000);
   }
+
+  setTimeout(function () {
+    $(".overlay.show").removeClass("show");
+  }, 3000);
 });
 
 </script>
