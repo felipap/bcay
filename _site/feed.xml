@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Brazil Club at Yale</title>
+    <description>The Brazil Club is an undergraduate organization at Yale University with the purpose of promoting the Brazilian culture around campus.
+</description>
+    <link>http://ivyleadershipsummit.com/</link>
+    <atom:link href="http://ivyleadershipsummit.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 30 May 2016 00:58:11 -0300</pubDate>
+    <lastBuildDate>Mon, 30 May 2016 00:58:11 -0300</lastBuildDate>
+    <generator>Jekyll v3.1.2</generator>
+    
+  </channel>
+</rss>

@@ -1,68 +1,62 @@
-[{	
+{
+  "luis": {
   "name": "Luis Fernando",
   "picture": "/images/pictures/luis.png"
 },
-{
+"davi": {
   "name": "Davi Lemos da Silva",
   "picture": "/images/pictures/davi.png"
 },
-{
+"felipe": {
   "name": "Felipe Aragão Pires",
   "picture": "/images/pictures/felipe.png"
 },
-{
+"carol": {
   "name": "Carolina Guimarães",
   "picture": "/images/pictures/carol.png"
 },
-{
+"raissa": {
   "name": "Raíssa Müller",
   "picture": "/images/pictures/raissa.png"
 },
-{
+"will": {
   "name": "Willian Hitoshi Kawakami",
   "picture": "/images/pictures/will.png"
 },
-{
+"guga": {
   "name": "Gustavo Avena",
   "picture": "/images/pictures/guga.png"
 },
-{
+"cirigliano": {
   "name": "Luis Fernando Cirigliano",
   "picture": "/images/pictures/cirigliano.png"
 },
-{
+"enrico": {
   "name": "Enrico Löffel",
   "picture": "/images/pictures/enrico.png"
 },
-{
+"gabriel": {
   "name": "Gabriel Simões",
   "picture": "/images/pictures/gabriel.png"
 },
-{
+"paca": {
   "name": "Alessandro Pacanowksi",
   "picture": "/images/pictures/paca.png"
 },
-{
+"brbr": {
   "name": "Bárbara Cruvinel Santiago",
   "picture": "/images/pictures/brbr.png"
 },
-{
+"jp": {
   "name": "João Pedro Drechsler",
   "picture": "/images/pictures/jp.png"
 },
-{
+"andre": {
   "name": "André Lucas de Melo",
   "picture": "/images/pictures/andre.png"
 },
-{
+"saru": {
   "name": "Gabriel Saruhashi",
   "picture": "/images/pictures/saru.png"
-},
-{
-  "name": "",
-  "picture": "/images/pictures/.png"
-},
-{
-  "name": "",
-  "picture": "/images/pictures/.png"
-}]
+}
+}
