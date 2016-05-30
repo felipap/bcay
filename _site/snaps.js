@@ -43,15 +43,18 @@ function onPlayerReady(event) {
       player.unMute();
     }
     firstClick = false;
-
-    var state = player.getPlayerState();
-    
-    if (state == 1) {
-      player.pauseVideo();
-    } else if (state == 2) {
-      player.playVideo();
-    }
+    togglePlay();
   });
+}
+
+function togglePlay() {
+  var state = player.getPlayerState();
+  
+  if (state == 1) {
+    player.pauseVideo();
+  } else if (state == 2) {
+    player.playVideo();
+  }
 }
 
 document.onkeydown = function (e) {
@@ -70,14 +73,19 @@ document.onkeydown = function (e) {
   } else if (e.keyCode == '40') { // down
     player.setVolume(Math.max(0, player.getVolume()-20));
   } else if (e.keyCode == '32') { // space
-    player.pauseVideo();
+    togglePlay();
   } else if (e.keyCode == 77) { // m
     if (player.isMuted()) {
       player.unMute();
     } else {
       player.mute();
     }
+  } else {
+    return true;
   }
+
+  e.preventDefault();
+  return false;
 };
 
 //this pauses the video when it's out of view, just wrap your video in .m-//video
