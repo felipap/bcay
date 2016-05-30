@@ -626,8 +626,13 @@ section.about {
       font-size: 20px;
       line-height: 2;
       color: #555; }
+    section.about main .from {
+      font-size: 16px;
+      line-height: 2;
+      font-weight: 400;
+      color: #888; }
     section.about main .bio {
-      color: #888;
+      color: #444;
       font-size: 16px; }
 
 .SnapPlayer {

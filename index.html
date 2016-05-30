@@ -72,6 +72,7 @@ function showPerson(id) {
   $(info).html($("#tmplPerson").html());
   $(info).find(".name").html(pessoa.name);
   $(info).find(".class").html(pessoa.class);
+  $(info).find(".from").html(pessoa.from); 
   $(info).find(".bio").html(pessoa.bio);
   $(info).find(".links").html(pessoa.links);
   $(info).find(".picture").css({ backgroundImage: "url({{ site.baseurl }}"+pessoa.picture+")" });
@@ -114,9 +115,14 @@ $(function() {
 <script type="text/template" id="tmplPerson">
 <div class="person">
   <div class="picture"></div>
-  <div class="name"></div>
+  <div>
+    <span class="name"></span>
+  </div>
   <div class="class"></div>
-  <p class="bio"></p>
+  <p>
+    <span class="from"></span>
+    <span class="bio"></span>
+  </p>
   <p class="links"></p>
 </div>
 </script>

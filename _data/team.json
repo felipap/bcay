@@ -1,14 +1,16 @@
 {
   "luis": {
   "name": "Luis Fernando",
-  "class": "Ezra Stiles, Class of 2019",
+  "class": "Jonathan Edwards, Class of 2018",
+  "from": "São Paulo.",
   "bio": "Lorem ipsum dolor sit amet, nibh iudicabit in his, eros libris vituperatoribus nec id. Ad his aliquando forensibus. Paulo ceteros salutandi id usu, dicat dicit soleat eam ei. Moderatius quaerendum eu qui, no nec idque mnesarchum. Error petentium interesset ad mea.",
   "picture": "/images/pictures/luis.png",
   "links": "<a href='http://facebook.com'>Facebook</a>"
 },
 "davi": {
   "name": "Davi Lemos da Silva",
-  "class": "Ezra Stiles, Class of 2019",
+  "class": "Saybrook, Class of 2019",
+  "from": "São Paulo.",
   "bio": "Lorem ipsum dolor sit amet, nibh iudicabit in his, eros libris vituperatoribus nec id. Ad his aliquando forensibus. Paulo ceteros salutandi id usu, dicat dicit soleat eam ei. Moderatius quaerendum eu qui, no nec idque mnesarchum. Error petentium interesset ad mea.",
   "picture": "/images/pictures/davi.png",
   "links": "<a href='http://facebook.com'>Facebook</a>"
@@ -16,27 +18,31 @@
 "felipe": {
   "name": "Felipe Aragão Pires",
   "class": "Ezra Stiles, Class of 2019",
+  "from": "Rio de Janeiro (carioca da gema).",
   "bio": "Felipe is a rising sophomore, majoring in Computer Science and Economics. He currently serves as <strong>Tech and Media Chair</strong> for the BCY. Felipe is interested in ways of bringing the Computer Science closer to the humanities. On campus, he is part of the <strong>Liberal Party</strong> and works as a <strong>Student Developer</strong>.",
   "picture": "/images/pictures/felipe.png",
   "links": "<a href='http://facebook.com/felipearagaopires'>Facebook</a>"
 },
 "brbr": {
   "name": "Bárbara Cruvinel Santiago",
-  "class": "Ezra Stiles, Class of 2019",
+  "class": "Pierson, Class of 2017",
+  "from": "Santos, São Paulo.",
   "bio": "Former president of the Brazil Club. Majoring in physics, nibh iudicabit in his, eros libris vituperatoribus nec id. Ad his aliquando forensibus. Paulo ceteros salutandi id usu, dicat dicit soleat eam ei. Moderatius quaerendum eu qui, no nec idque mnesarchum. Error petentium interesset ad mea.",
   "picture": "/images/pictures/brbr.png",
   "links": "<a href='http://facebook.com'>Facebook</a>"
 },
 "kenneth": {
   "name": "Kenneth Jackson",
-  "class": "Ezra Stiles, Class of 2019",
+  "class": "Ezra Stiles, Class of 2017",
+  "from": "São Paulo.",
   "bio": "N ibh iudicabit in his, eros libris vituperatoribus nec id. Ad his aliquando forensibus. Paulo ceteros salutandi id usu, dicat dicit soleat eam ei. Moderatius quaerendum eu qui, no nec idque mnesarchum. Error petentium interesset ad mea.",
   "picture": "/images/pictures/kenneth.png",
   "links": "<a href='http://facebook.com'>Facebook</a>"
 },
 "jp": {
   "name": "João Pedro Drechsler",
-  "class": "Ezra Stiles, Class of 2019",
+  "class": "Ezra Stiles, Class of 2016",
+  "from": "São Paulo.",
   "bio": "Lorem ipsum dolor sit amet, nibh iudicabit in his, eros libris vituperatoribus nec id. Ad his aliquando forensibus. Paulo ceteros salutandi id usu, dicat dicit soleat eam ei. Moderatius quaerendum eu qui, no nec idque mnesarchum. Error petentium interesset ad mea.",
   "picture": "/images/pictures/jp.png",
   "links": "<a href='http://facebook.com'>Facebook</a>"
@@ -44,28 +50,32 @@
 
 "andre": {
   "name": "André Lucas de Melo",
-  "class": "Ezra Stiles, Class of 2019",
+  "class": "Ezra Stiles, Class of 2018",
+  "from": "São Paulo.",
   "bio": "Lorem ipsum dolor sit amet, nibh iudicabit in his, eros libris vituperatoribus nec id. Ad his aliquando forensibus. Paulo ceteros salutandi id usu, dicat dicit soleat eam ei. Moderatius quaerendum eu qui, no nec idque mnesarchum. Error petentium interesset ad mea.",
   "picture": "/images/pictures/andre.png",
   "links": "<a href='http://facebook.com'>Facebook</a>"
 },
 "dani": {
   "name": "Dani Brighenti",
-  "class": "Ezra Stiles, Class of 2019",
+  "class": "Ezra Stiles, Class of 2018",
+  "from": "São Paulo.",
   "bio": "Lorem ipsum dolor sit amet, nibh iudicabit in his, eros libris vituperatoribus nec id. Ad his aliquando forensibus. Paulo ceteros salutandi id usu, dicat dicit soleat eam ei. Moderatius quaerendum eu qui, no nec idque mnesarchum. Error petentium interesset ad mea.",
   "picture": "/images/pictures/dani.png",
   "links": "<a href='http://facebook.com'>Facebook</a>"
 },
 "nat": {
   "name": "Nathalya Nascimento",
-  "class": "Ezra Stiles, Class of 2019",
+  "class": "Davenport, Class of 2019",
+  "from": "Brasília.",
   "bio": "Lorem ipsum dolor sit amet, nibh iudicabit in his, eros libris vituperatoribus nec id. Ad his aliquando forensibus. Paulo ceteros salutandi id usu, dicat dicit soleat eam ei. Moderatius quaerendum eu qui, no nec idque mnesarchum. Error petentium interesset ad mea.",
   "picture": "/images/pictures/nat.png",
   "links": "<a href='http://facebook.com'>Facebook</a>"
 },
 "sarah": {
   "name": "Sarah Barreto",
-  "class": "Ezra Stiles, Class of 2019",
+  "class": "Morse, Class of 2019",
+  "from": "Salvador, Bahia.",
   "bio": "Lorem ipsum dolor sit amet, nibh iudicabit in his, eros libris vituperatoribus nec id. Ad his aliquando forensibus. Paulo ceteros salutandi id usu, dicat dicit soleat eam ei. Moderatius quaerendum eu qui, no nec idque mnesarchum. Error petentium interesset ad mea.",
   "picture": "/images/pictures/sarah.png",
   "links": "<a href='http://facebook.com'>Facebook</a>"
@@ -73,6 +83,7 @@
 "will": {
   "name": "Willian Hitoshi Kawakami",
   "class": "Ezra Stiles, Class of 2019",
+  "from": "São Paulo.",
   "bio": "Lorem ipsum dolor sit amet, nibh iudicabit in his, eros libris vituperatoribus nec id. Ad his aliquando forensibus. Paulo ceteros salutandi id usu, dicat dicit soleat eam ei. Moderatius quaerendum eu qui, no nec idque mnesarchum. Error petentium interesset ad mea.",
   "picture": "/images/pictures/will.png",
   "links": "<a href='http://facebook.com'>Facebook</a>"
@@ -80,6 +91,7 @@
 "guga": {
   "name": "Gustavo Avena",
   "class": "Ezra Stiles, Class of 2019",
+  "from": "Salvador, Bahia.",
   "bio": "Lorem ipsum dolor sit amet, nibh iudicabit in his, eros libris vituperatoribus nec id. Ad his aliquando forensibus. Paulo ceteros salutandi id usu, dicat dicit soleat eam ei. Moderatius quaerendum eu qui, no nec idque mnesarchum. Error petentium interesset ad mea.",
   "picture": "/images/pictures/guga.png",
   "links": "<a href='http://facebook.com'>Facebook</a>"
@@ -87,13 +99,15 @@
 "cirigliano": {
   "name": "Luis Fernando Cirigliano",
   "class": "Ezra Stiles, Class of 2019",
+  "from": "São Paulo.",
   "bio": "Lorem ipsum dolor sit amet, nibh iudicabit in his, eros libris vituperatoribus nec id. Ad his aliquando forensibus. Paulo ceteros salutandi id usu, dicat dicit soleat eam ei. Moderatius quaerendum eu qui, no nec idque mnesarchum. Error petentium interesset ad mea.",
   "picture": "/images/pictures/cirigliano.png",
   "links": "<a href='http://facebook.com'>Facebook</a>"
 },
 "enrico": {
   "name": "Enrico Löffel",
-  "class": "Ezra Stiles, Class of 2019",
+  "class": "Davenport, Class of 2019",
+  "from": "São Paulo.",
   "bio": "Lorem ipsum dolor sit amet, nibh iudicabit in his, eros libris vituperatoribus nec id. Ad his aliquando forensibus. Paulo ceteros salutandi id usu, dicat dicit soleat eam ei. Moderatius quaerendum eu qui, no nec idque mnesarchum. Error petentium interesset ad mea.",
   "picture": "/images/pictures/enrico.png",
   "links": "<a href='http://facebook.com'>Facebook</a>"
@@ -101,34 +115,39 @@
 "gabriel": {
   "name": "Gabriel Simões",
   "class": "Ezra Stiles, Class of 2019",
+  "from": "São Paulo.",
   "bio": "Lorem ipsum dolor sit amet, nibh iudicabit in his, eros libris vituperatoribus nec id. Ad his aliquando forensibus. Paulo ceteros salutandi id usu, dicat dicit soleat eam ei. Moderatius quaerendum eu qui, no nec idque mnesarchum. Error petentium interesset ad mea.",
   "picture": "/images/pictures/gabriel.png",
   "links": "<a href='http://facebook.com'>Facebook</a>"
 },
 "paca": {
   "name": "Alessandro Pacanowksi",
-  "class": "Ezra Stiles, Class of 2019",
+  "class": "Jonathan Edwards, Class of 2019",
+  "from": "Rio de Janeiro.",
   "bio": "Lorem ipsum dolor sit amet, nibh iudicabit in his, eros libris vituperatoribus nec id. Ad his aliquando forensibus. Paulo ceteros salutandi id usu, dicat dicit soleat eam ei. Moderatius quaerendum eu qui, no nec idque mnesarchum. Error petentium interesset ad mea.",
   "picture": "/images/pictures/paca.png",
   "links": "<a href='http://facebook.com'>Facebook</a>"
 },
 "raissa": {
   "name": "Raíssa Müller",
-  "class": "Ezra Stiles, Class of 2019",
+  "class": "Class of 2020",
+  "from": "São Paulo.",
   "bio": "Lorem ipsum dolor sit amet, nibh iudicabit in his, eros libris vituperatoribus nec id. Ad his aliquando forensibus. Paulo ceteros salutandi id usu, dicat dicit soleat eam ei. Moderatius quaerendum eu qui, no nec idque mnesarchum. Error petentium interesset ad mea.",
   "picture": "/images/pictures/raissa.png",
   "links": "<a href='http://facebook.com'>Facebook</a>"
 },
 "carol": {
   "name": "Carolina Guimarães",
-  "class": "Ezra Stiles, Class of 2019",
+  "class": "Class of 2020",
+  "from": "Vitória, ES.",
   "bio": "Lorem ipsum dolor sit amet, nibh iudicabit in his, eros libris vituperatoribus nec id. Ad his aliquando forensibus. Paulo ceteros salutandi id usu, dicat dicit soleat eam ei. Moderatius quaerendum eu qui, no nec idque mnesarchum. Error petentium interesset ad mea.",
   "picture": "/images/pictures/carol.png",
   "links": "<a href='http://facebook.com'>Facebook</a>"
 },
 "saru": {
   "name": "Gabriel Saruhashi",
-  "class": "Ezra Stiles, Class of 2019",
+  "class": "Class of 2020",
+  "from": "São Paulo.",
   "bio": "Lorem ipsum dolor sit amet, nibh iudicabit in his, eros libris vituperatoribus nec id. Ad his aliquando forensibus. Paulo ceteros salutandi id usu, dicat dicit soleat eam ei. Moderatius quaerendum eu qui, no nec idque mnesarchum. Error petentium interesset ad mea.",
   "picture": "/images/pictures/saru.png",
   "links": "<a href='http://facebook.com'>Facebook</a>"
