@@ -11,7 +11,12 @@
 <section class="main">
   <div class="SnapPlayer">
     <div id="player"></div>
-    <div class="overlay"></div>
+    <div class="overlay">
+      <div class="text">
+        M - mute
+        space - pausr
+      </div>
+    </div>
   </div>
   <main>
     <h1>Brazil Club at Yale</h1>
@@ -72,8 +77,9 @@ function showPerson(id) {
 
   $("#about-main").empty().append(info);
   $("section.about").fadeIn(); // css({ display: "auto" });
-  var num = Math.floor(Math.random()*18);
-  $("section.about canvas").attr("src", "{{ site.baseurl }}/images/backgrounds/"+num+".jpg");
+  var num = Math.floor(Math.random()*10);
+  var url = "{{ site.baseurl }}/images/backgrounds/"+num+".jpg";
+  $("section.about canvas").attr("src", url)
   execBlur();
   $("html,body").animate({
     scrollTop: $("section.about").offset().top,

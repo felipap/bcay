@@ -45,7 +45,7 @@ CanvasImage.prototype = {
 	},
 };
 
-function execBlur () {
+function execBlur() {
 	$('canvas.blur').each(function() {
 		var el = this, img = new Image;
 		img.onload = function () {
@@ -55,4 +55,5 @@ function execBlur () {
 		img.src = $(this).attr('src');
 	});
 }
+
 
