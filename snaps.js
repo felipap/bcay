@@ -98,5 +98,5 @@ $(window).scroll(function() {
 
 $(function() {
   var mt = 610; // $(".SnapPlayer").outerHeight()/2;
-  $("section.main").css({ marginTop: (Math.max(0,$(window).height()-mt)/2) });
+  // $("section.main").css({ marginTop: (Math.max(0,$(window).height()-mt)/2) });
 });

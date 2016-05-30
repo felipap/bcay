@@ -1,62 +1,108 @@
 {
   "luis": {
   "name": "Luis Fernando",
-  "picture": "/images/pictures/luis.png"
+  "class": "Ezra Stiles, Class of 2019",
+  "bio": "Lorem ipsum dolor sit amet, nibh iudicabit in his, eros libris vituperatoribus nec id. Ad his aliquando forensibus. Paulo ceteros salutandi id usu, dicat dicit soleat eam ei. Moderatius quaerendum eu qui, no nec idque mnesarchum. Error petentium interesset ad mea.",
+  "picture": "/images/pictures/luis.png",
+  "links": "<a href='http://facebook.com'>Facebook</a>"
 },
 "davi": {
   "name": "Davi Lemos da Silva",
-  "picture": "/images/pictures/davi.png"
+  "class": "Ezra Stiles, Class of 2019",
+  "bio": "Lorem ipsum dolor sit amet, nibh iudicabit in his, eros libris vituperatoribus nec id. Ad his aliquando forensibus. Paulo ceteros salutandi id usu, dicat dicit soleat eam ei. Moderatius quaerendum eu qui, no nec idque mnesarchum. Error petentium interesset ad mea.",
+  "picture": "/images/pictures/davi.png",
+  "links": "<a href='http://facebook.com'>Facebook</a>"
 },
 "felipe": {
   "name": "Felipe Aragão Pires",
-  "picture": "/images/pictures/felipe.png"
-},
-"carol": {
-  "name": "Carolina Guimarães",
-  "picture": "/images/pictures/carol.png"
-},
-"raissa": {
-  "name": "Raíssa Müller",
-  "picture": "/images/pictures/raissa.png"
-},
-"will": {
-  "name": "Willian Hitoshi Kawakami",
-  "picture": "/images/pictures/will.png"
-},
-"guga": {
-  "name": "Gustavo Avena",
-  "picture": "/images/pictures/guga.png"
-},
-"cirigliano": {
-  "name": "Luis Fernando Cirigliano",
-  "picture": "/images/pictures/cirigliano.png"
-},
-"enrico": {
-  "name": "Enrico Löffel",
-  "picture": "/images/pictures/enrico.png"
-},
-"gabriel": {
-  "name": "Gabriel Simões",
-  "picture": "/images/pictures/gabriel.png"
-},
-"paca": {
-  "name": "Alessandro Pacanowksi",
-  "picture": "/images/pictures/paca.png"
+  "class": "Ezra Stiles, Class of 2019",
+  "bio": "Lorem ipsum dolor sit amet, nibh iudicabit in his, eros libris vituperatoribus nec id. Ad his aliquando forensibus. Paulo ceteros salutandi id usu, dicat dicit soleat eam ei. Moderatius quaerendum eu qui, no nec idque mnesarchum. Error petentium interesset ad mea.",
+  "picture": "/images/pictures/felipe.png",
+  "links": "<a href='http://facebook.com'>Facebook</a>"
 },
 "brbr": {
   "name": "Bárbara Cruvinel Santiago",
-  "picture": "/images/pictures/brbr.png"
+  "class": "Ezra Stiles, Class of 2019",
+  "bio": "Former president of the Brazil Club. Majoring in physics, nibh iudicabit in his, eros libris vituperatoribus nec id. Ad his aliquando forensibus. Paulo ceteros salutandi id usu, dicat dicit soleat eam ei. Moderatius quaerendum eu qui, no nec idque mnesarchum. Error petentium interesset ad mea.",
+  "picture": "/images/pictures/brbr.png",
+  "links": "<a href='http://facebook.com'>Facebook</a>"
 },
 "jp": {
   "name": "João Pedro Drechsler",
-  "picture": "/images/pictures/jp.png"
+  "class": "Ezra Stiles, Class of 2019",
+  "bio": "Lorem ipsum dolor sit amet, nibh iudicabit in his, eros libris vituperatoribus nec id. Ad his aliquando forensibus. Paulo ceteros salutandi id usu, dicat dicit soleat eam ei. Moderatius quaerendum eu qui, no nec idque mnesarchum. Error petentium interesset ad mea.",
+  "picture": "/images/pictures/jp.png",
+  "links": "<a href='http://facebook.com'>Facebook</a>"
 },
+
 "andre": {
   "name": "André Lucas de Melo",
-  "picture": "/images/pictures/andre.png"
+  "class": "Ezra Stiles, Class of 2019",
+  "bio": "Lorem ipsum dolor sit amet, nibh iudicabit in his, eros libris vituperatoribus nec id. Ad his aliquando forensibus. Paulo ceteros salutandi id usu, dicat dicit soleat eam ei. Moderatius quaerendum eu qui, no nec idque mnesarchum. Error petentium interesset ad mea.",
+  "picture": "/images/pictures/andre.png",
+  "links": "<a href='http://facebook.com'>Facebook</a>"
+},
+"will": {
+  "name": "Willian Hitoshi Kawakami",
+  "class": "Ezra Stiles, Class of 2019",
+  "bio": "Lorem ipsum dolor sit amet, nibh iudicabit in his, eros libris vituperatoribus nec id. Ad his aliquando forensibus. Paulo ceteros salutandi id usu, dicat dicit soleat eam ei. Moderatius quaerendum eu qui, no nec idque mnesarchum. Error petentium interesset ad mea.",
+  "picture": "/images/pictures/will.png",
+  "links": "<a href='http://facebook.com'>Facebook</a>"
+},
+"guga": {
+  "name": "Gustavo Avena",
+  "class": "Ezra Stiles, Class of 2019",
+  "bio": "Lorem ipsum dolor sit amet, nibh iudicabit in his, eros libris vituperatoribus nec id. Ad his aliquando forensibus. Paulo ceteros salutandi id usu, dicat dicit soleat eam ei. Moderatius quaerendum eu qui, no nec idque mnesarchum. Error petentium interesset ad mea.",
+  "picture": "/images/pictures/guga.png",
+  "links": "<a href='http://facebook.com'>Facebook</a>"
+},
+"cirigliano": {
+  "name": "Luis Fernando Cirigliano",
+  "class": "Ezra Stiles, Class of 2019",
+  "bio": "Lorem ipsum dolor sit amet, nibh iudicabit in his, eros libris vituperatoribus nec id. Ad his aliquando forensibus. Paulo ceteros salutandi id usu, dicat dicit soleat eam ei. Moderatius quaerendum eu qui, no nec idque mnesarchum. Error petentium interesset ad mea.",
+  "picture": "/images/pictures/cirigliano.png",
+  "links": "<a href='http://facebook.com'>Facebook</a>"
+},
+"enrico": {
+  "name": "Enrico Löffel",
+  "class": "Ezra Stiles, Class of 2019",
+  "bio": "Lorem ipsum dolor sit amet, nibh iudicabit in his, eros libris vituperatoribus nec id. Ad his aliquando forensibus. Paulo ceteros salutandi id usu, dicat dicit soleat eam ei. Moderatius quaerendum eu qui, no nec idque mnesarchum. Error petentium interesset ad mea.",
+  "picture": "/images/pictures/enrico.png",
+  "links": "<a href='http://facebook.com'>Facebook</a>"
+},
+"gabriel": {
+  "name": "Gabriel Simões",
+  "class": "Ezra Stiles, Class of 2019",
+  "bio": "Lorem ipsum dolor sit amet, nibh iudicabit in his, eros libris vituperatoribus nec id. Ad his aliquando forensibus. Paulo ceteros salutandi id usu, dicat dicit soleat eam ei. Moderatius quaerendum eu qui, no nec idque mnesarchum. Error petentium interesset ad mea.",
+  "picture": "/images/pictures/gabriel.png",
+  "links": "<a href='http://facebook.com'>Facebook</a>"
+},
+"paca": {
+  "name": "Alessandro Pacanowksi",
+  "class": "Ezra Stiles, Class of 2019",
+  "bio": "Lorem ipsum dolor sit amet, nibh iudicabit in his, eros libris vituperatoribus nec id. Ad his aliquando forensibus. Paulo ceteros salutandi id usu, dicat dicit soleat eam ei. Moderatius quaerendum eu qui, no nec idque mnesarchum. Error petentium interesset ad mea.",
+  "picture": "/images/pictures/paca.png",
+  "links": "<a href='http://facebook.com'>Facebook</a>"
+},
+"raissa": {
+  "name": "Raíssa Müller",
+  "class": "Ezra Stiles, Class of 2019",
+  "bio": "Lorem ipsum dolor sit amet, nibh iudicabit in his, eros libris vituperatoribus nec id. Ad his aliquando forensibus. Paulo ceteros salutandi id usu, dicat dicit soleat eam ei. Moderatius quaerendum eu qui, no nec idque mnesarchum. Error petentium interesset ad mea.",
+  "picture": "/images/pictures/raissa.png",
+  "links": "<a href='http://facebook.com'>Facebook</a>"
+},
+"carol": {
+  "name": "Carolina Guimarães",
+  "class": "Ezra Stiles, Class of 2019",
+  "bio": "Lorem ipsum dolor sit amet, nibh iudicabit in his, eros libris vituperatoribus nec id. Ad his aliquando forensibus. Paulo ceteros salutandi id usu, dicat dicit soleat eam ei. Moderatius quaerendum eu qui, no nec idque mnesarchum. Error petentium interesset ad mea.",
+  "picture": "/images/pictures/carol.png",
+  "links": "<a href='http://facebook.com'>Facebook</a>"
 },
 "saru": {
   "name": "Gabriel Saruhashi",
-  "picture": "/images/pictures/saru.png"
+  "class": "Ezra Stiles, Class of 2019",
+  "bio": "Lorem ipsum dolor sit amet, nibh iudicabit in his, eros libris vituperatoribus nec id. Ad his aliquando forensibus. Paulo ceteros salutandi id usu, dicat dicit soleat eam ei. Moderatius quaerendum eu qui, no nec idque mnesarchum. Error petentium interesset ad mea.",
+  "picture": "/images/pictures/saru.png",
+  "links": "<a href='http://facebook.com'>Facebook</a>"
 }
 }

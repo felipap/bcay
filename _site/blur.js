@@ -45,7 +45,7 @@ CanvasImage.prototype = {
 	},
 };
 
-$(function () {
+function execBlur () {
 	$('canvas.blur').each(function() {
 		var el = this, img = new Image;
 		img.onload = function () {
@@ -54,5 +54,5 @@ $(function () {
 		}
 		img.src = $(this).attr('src');
 	});
-});
+}
 

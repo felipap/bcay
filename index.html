@@ -7,7 +7,6 @@
 
 <body class="PageHome">
 <script src="http://www.youtube.com/iframe_api"></script>
-<script src="{{ site.baseurl }}/jquery.fullPage.min.js"></script>
 
 <section class="main">
   <div class="SnapPlayer">
@@ -23,47 +22,84 @@
       <a href="http://facebook.com/brazilclubatyale">Check out BCY's Facebook to see what we're up to</a>
     </p>
     <ul class="team">
-      {% for pessoa in site.data.team %}
-      <li>
-        <div style="background-image: url({{ site.baseurl }}{{ pessoa.picture }})"></div>
+      {% for _pessoa in site.data.team %}
+      {% assign pessoa = _pessoa[1] %}
+      <li onClick="showPerson('{{ _pessoa[0] }}')">
+        <div title="{{ pessoa.name }}" style="background-image: url({{ site.baseurl }}{{ pessoa.picture }})"></div>
       </li>
       {% endfor %}
     </ul>
   </main>
 </section>
 
-<div class="borderTop">
+<div class="stripes bottom">
   <div></div>
   <div></div>
   <div></div>
   <div></div>
 </div>
 
-<!--
-<section class="about">
+<section class="about" style="display: none">
   <aside class="fullHeight">
     <div class="bg-wrapper">
-      <canvas class="blur" src="{{ site.baseurl }}/images/backgrounds/7.jpg" data-blur="0"></canvas>
+      <canvas class="blur" src="{{ site.baseurl }}/images/backgrounds/4.jpg" data-blur="0"></canvas>
       <div class="blackout"></div>
+      <footer>
+        Brazil Club at Yale &reg; 2016
+      </footer>
     </div>
   </aside>
 
-  <main>
-    <h1>Membros</h1>
+  <main id="about-main">
   </main>
 </section>
--->
 
 <script src="{{ site.baseurl }}/snaps.js"></script>
 <script src="{{ site.baseurl }}/blur.js"></script>
 
 <script>
+var pessoas = {{ site.data.team | jsonify }};
+
+function showPerson(id) {
+  var pessoa = pessoas[id];
+  var info = document.createElement("div");
+  $(info).html($("#tmplPerson").html());
+  $(info).find(".name").html(pessoa.name);
+  $(info).find(".class").html(pessoa.class);
+  $(info).find(".bio").html(pessoa.bio);
+  $(info).find(".links").html(pessoa.links);
+  $(info).find(".picture").css({ backgroundImage: "url({{ site.baseurl }}"+pessoa.picture+")" });
+
+  $("#about-main").empty().append(info);
+  $("section.about").fadeIn(); // css({ display: "auto" });
+  var num = Math.floor(Math.random()*18);
+  $("section.about canvas").attr("src", "{{ site.baseurl }}/images/backgrounds/"+num+".jpg");
+  execBlur();
+  $("html,body").animate({
+    scrollTop: $("section.about").offset().top,
+  });
+}
+</script>
+
+<script type="text/template" id="tmplPerson">
+<div class="person">
+  <div class="picture"></div>
+  <div class="name"></div>
+  <div class="class"></div>
+  <p class="bio"></p>
+  <p class="links"></p>
+</div>
+</script>
+
+<script>
 $(document).ready(function() {
+  execBlur();
   // $(window).resize(function () {
   //   $("section, .fullHeight").css({ minHeight: $(window).outerHeight()-5 });
   // });
 
-  // $("section, .fullHeight").css({ minHeight: $(window).outerHeight()-10 });
+  $("section").css({ height: $(window).outerHeight() });
+  $(".fullHeight").css({ minHeight: $(window).outerHeight() });
 });
 </script>
 </body>

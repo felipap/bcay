@@ -105,12 +105,9 @@ $color-green: #206964;
         "syntax-highlighting"
 ;
 
-.borderTop {
-  display: table;
+.stripes {
   width: 100%;
   height: 10px;
-  position: fixed;
-  bottom: 0;
 
   display: -webkit-flex;
   display: flex;
@@ -127,6 +124,17 @@ $color-green: #206964;
   & > div:nth-child(3) { background: #37C56B; }
   & > div:nth-child(4) { background: #135728; }
 
+  &.bottom {
+    height: 10px;
+    position: absolute;
+    // bottom: -60px;
+    bottom: 0;
+  }
+
+  &.top {
+    height: 10px;
+    position: relative;
+  }
   
   /*& > div:nth-child(2) { background: #61A363 }*/
   /*& > div:nth-child(3) { background: #9CB95A }*/
@@ -142,7 +150,7 @@ section.main {
   margin: auto;
   display: table;
   position: relative;
-  margin-top: 20px;
+  padding-top: 75px;
 
   font-family: "Avenir", sans-serif;
 
@@ -161,12 +169,13 @@ section.main {
 
     p {
       font-size: 16px;
+      margin-bottom: 20px;
     }
 
     .team {
       list-style: none;
       margin-left: 0;
-      margin-top: 10px;
+      margin-top: 15px;
       
       li {
         display: inline-block;
@@ -175,6 +184,7 @@ section.main {
         div {
           width: $dim;
           height: $dim;
+          cursor: pointer;
           border-radius: $dim;
           
           /*border-radius: $img-size;*/
@@ -191,17 +201,64 @@ section.main {
 
 section.about {
   overflow: hidden;
+  font-family: Avenir, sans-serif;
   
   aside {
     position: relative;
-    width: 40%;
+    width: 30%;
     float: left;
     overflow: hidden;
+    box-shadow: inset -7px 0 9px -7px rgba(0,0,0,0.4), inset 0 7px 9px -7px rgba(0,0,0,0.4);        
+
+    footer {
+      position: absolute;
+      color: white;
+      bottom: 20px;
+      width: 100%;
+      text-align: center;
+      font-size: 14px;
+    }
   }
 
   main {
-    margin-left: 40%;
+    margin-left: 30%;
     padding-left: 50px;
+    padding-top: 50px;
+    max-width: 600px;
+
+    .picture {
+      $dim: 200px;
+      width: $dim;
+      height: $dim;
+      cursor: pointer;
+      margin-bottom: 20px;
+      // border-radius: $dim;
+      
+      /*border-radius: $img-size;*/
+      background-position: center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+
+    font-family: Avenir;
+
+    .name {
+      font-size: 30px;
+      color: #333;
+    }
+
+    .class {
+      font-size: 20px;
+      line-height: 2;
+      color: #555;
+    }
+
+    .bio {
+      color: #888;
+      font-size: 16px;
+    }
   }
 }
 
