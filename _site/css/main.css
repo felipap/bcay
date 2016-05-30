@@ -616,7 +616,8 @@ section.about {
 
 .SnapPlayer {
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  z-index: 1; }
   .SnapPlayer #player {
     margin-top: -35px; }
   .SnapPlayer .overlay {
@@ -627,6 +628,17 @@ section.about {
     right: 0;
     cursor: pointer;
     border-bottom: 50px solid white; }
+    .SnapPlayer .overlay .text {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      opacity: 0;
+      background: rgba(0, 0, 0, 0.4);
+      padding: 10px 20px;
+      color: white;
+      transition: .1s all linear; }
+  .SnapPlayer:hover .overlay .text {
+    opacity: 1; }
 
 .background {
   position: fixed;
