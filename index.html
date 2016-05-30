@@ -54,6 +54,7 @@ title: Brazil Club at Yale
       </footer>
     </div>
   </aside>
+  <div class="close-btn" onClick="closeAbout()"></div>
 
   <main id="about-main">
   </main>
@@ -81,10 +82,29 @@ function showPerson(id) {
   var url = "{{ site.baseurl }}/images/backgrounds/"+num+".jpg";
   $("section.about canvas").attr("src", url)
   execBlur();
+  location.hash = id;
   $("html,body").animate({
     scrollTop: $("section.about").offset().top,
   });
 }
+
+function closeAbout() {
+  $("html,body").animate({ scrollTop: 0 },
+      function () {
+        location.hash = "";
+        $("section.about").slideUp();
+      });
+}
+
+$(function() {
+  var hash = location.hash.replace(/^#/, "");
+  if (hash && pessoas[hash]) {
+    setTimeout(function() {
+      showPerson(hash)
+    }, 1000);
+  }
+});
+
 </script>
 
 <script type="text/template" id="tmplPerson">

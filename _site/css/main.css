@@ -571,6 +571,7 @@ section.main {
           background-size: cover; }
 
 section.about {
+  position: relative;
   overflow: hidden;
   font-family: Avenir, sans-serif; }
   section.about aside {
@@ -586,6 +587,21 @@ section.about {
       width: 100%;
       text-align: center;
       font-size: 14px; }
+  section.about .close-btn {
+    display: table;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    cursor: pointer;
+    padding: 5px 10px; }
+    section.about .close-btn:before {
+      content: 'x';
+      color: #666;
+      font-size: 25px;
+      font-weight: 300;
+      font-family: Avenir, Arial, sans-serif; }
+    section.about .close-btn:hover:before {
+      color: #333; }
   section.about main {
     margin-left: 30%;
     padding-left: 50px;

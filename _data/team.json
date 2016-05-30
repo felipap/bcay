@@ -49,6 +49,13 @@
   "picture": "/images/pictures/andre.png",
   "links": "<a href='http://facebook.com'>Facebook</a>"
 },
+"dani": {
+  "name": "Dani Brighenti",
+  "class": "Ezra Stiles, Class of 2019",
+  "bio": "Lorem ipsum dolor sit amet, nibh iudicabit in his, eros libris vituperatoribus nec id. Ad his aliquando forensibus. Paulo ceteros salutandi id usu, dicat dicit soleat eam ei. Moderatius quaerendum eu qui, no nec idque mnesarchum. Error petentium interesset ad mea.",
+  "picture": "/images/pictures/dani.png",
+  "links": "<a href='http://facebook.com'>Facebook</a>"
+},
 "nat": {
   "name": "Nathalya Nascimento",
   "class": "Ezra Stiles, Class of 2019",
