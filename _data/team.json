@@ -1,18 +1,10 @@
 {
-  "luis": {
-  "name": "Luis Fernando",
-  "class": "Jonathan Edwards, Class of 2018",
-  "from": "São Paulo.",
+  "sarah": {
+  "name": "Sarah Barreto",
+  "class": "Morse, Class of 2019",
+  "from": "Salvador, Bahia.",
   "bio": "Lorem ipsum dolor sit amet, nibh iudicabit in his, eros libris vituperatoribus nec id. Ad his aliquando forensibus. Paulo ceteros salutandi id usu, dicat dicit soleat eam ei. Moderatius quaerendum eu qui, no nec idque mnesarchum. Error petentium interesset ad mea.",
-  "picture": "/images/pictures/luis.png",
-  "links": "<a href='http://facebook.com'>Facebook</a>"
-},
-"davi": {
-  "name": "Davi Lemos da Silva",
-  "class": "Saybrook, Class of 2019",
-  "from": "São Paulo.",
-  "bio": "Lorem ipsum dolor sit amet, nibh iudicabit in his, eros libris vituperatoribus nec id. Ad his aliquando forensibus. Paulo ceteros salutandi id usu, dicat dicit soleat eam ei. Moderatius quaerendum eu qui, no nec idque mnesarchum. Error petentium interesset ad mea.",
-  "picture": "/images/pictures/davi.png",
+  "picture": "/images/pictures/sarah.png",
   "links": "<a href='http://facebook.com'>Facebook</a>"
 },
 "felipe": {
@@ -23,6 +15,7 @@
   "picture": "/images/pictures/felipe.png",
   "links": "<a href='http://facebook.com/felipearagaopires'>Facebook</a>"
 },
+
 "brbr": {
   "name": "Bárbara Cruvinel Santiago",
   "class": "Pierson, Class of 2017",
@@ -56,6 +49,15 @@
   "picture": "/images/pictures/andre.png",
   "links": "<a href='http://facebook.com'>Facebook</a>"
 },
+"luis": {
+"name": "Luis Fernando",
+"class": "Jonathan Edwards, Class of 2018",
+"from": "São Paulo.",
+"bio": "Lorem ipsum dolor sit amet, nibh iudicabit in his, eros libris vituperatoribus nec id. Ad his aliquando forensibus. Paulo ceteros salutandi id usu, dicat dicit soleat eam ei. Moderatius quaerendum eu qui, no nec idque mnesarchum. Error petentium interesset ad mea.",
+"picture": "/images/pictures/luis.png",
+"links": "<a href='http://facebook.com'>Facebook</a>"
+},
+
 "dani": {
   "name": "Dani Brighenti",
   "class": "Ezra Stiles, Class of 2018",
@@ -72,14 +74,6 @@
   "picture": "/images/pictures/nat.png",
   "links": "<a href='http://facebook.com'>Facebook</a>"
 },
-"sarah": {
-  "name": "Sarah Barreto",
-  "class": "Morse, Class of 2019",
-  "from": "Salvador, Bahia.",
-  "bio": "Lorem ipsum dolor sit amet, nibh iudicabit in his, eros libris vituperatoribus nec id. Ad his aliquando forensibus. Paulo ceteros salutandi id usu, dicat dicit soleat eam ei. Moderatius quaerendum eu qui, no nec idque mnesarchum. Error petentium interesset ad mea.",
-  "picture": "/images/pictures/sarah.png",
-  "links": "<a href='http://facebook.com'>Facebook</a>"
-},
 "will": {
   "name": "Willian Hitoshi Kawakami",
   "class": "Ezra Stiles, Class of 2019",
@@ -88,6 +82,15 @@
   "picture": "/images/pictures/will.png",
   "links": "<a href='http://facebook.com'>Facebook</a>"
 },
+"davi": {
+  "name": "Davi Lemos da Silva",
+  "class": "Saybrook, Class of 2019",
+  "from": "São Paulo.",
+  "bio": "Lorem ipsum dolor sit amet, nibh iudicabit in his, eros libris vituperatoribus nec id. Ad his aliquando forensibus. Paulo ceteros salutandi id usu, dicat dicit soleat eam ei. Moderatius quaerendum eu qui, no nec idque mnesarchum. Error petentium interesset ad mea.",
+  "picture": "/images/pictures/davi.png",
+  "links": "<a href='http://facebook.com'>Facebook</a>"
+},
+
 "guga": {
   "name": "Gustavo Avena",
   "class": "Ezra Stiles, Class of 2019",
