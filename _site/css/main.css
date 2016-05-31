@@ -524,7 +524,8 @@ pre {
   .stripes > div:nth-child(4) {
     background: #135728; }
   .stripes.bottom {
-    height: 10px; }
+    height: 10px;
+    margin-top: -10px; }
   .stripes.top {
     height: 10px;
     position: relative; }
@@ -624,9 +625,10 @@ section.about {
       font-size: 20px;
       line-height: 2;
       color: #555; }
+    section.about main p {
+      line-height: 1.6; }
     section.about main .from {
       font-size: 16px;
-      line-height: 2;
       font-weight: 400;
       color: #888; }
     section.about main .bio {
