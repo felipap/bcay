@@ -31,14 +31,14 @@
     <div id="player"></div>
     <div class="overlay show">
       <div class="text">
-        m (mute)<br />space (pause)
+        m (mute)<br />space (pause,
       </div>
     </div>
   </div>
   <main>
     <h1>Brazil Club at Yale</h1>
     <p>
-      The BCY is the community of Brazilian undergraduate students at Yale University.
+    The BCY is the community of Brazilian undergrad students at Yale University. <a href="javascript:showAbout()">Learn more.</a>
     </p>
     <p>
       <a href="http://facebook.com/brazilclubatyale">Check out our Facebook to see what we're up to</a>
@@ -151,7 +151,7 @@
   <div></div>
 </div>
 
-<section class="about" style="display: none">
+<section class="info" style="display: none">
   <aside class="fullHeight">
     <div class="bg-wrapper">
       <canvas class="blur" src="/images/backgrounds/4.jpg" data-blur="0"></canvas>
@@ -163,7 +163,7 @@
   </aside>
   <div class="close-btn" onClick="closeAbout()"></div>
 
-  <main id="about-main">
+  <main id="info-main">
   </main>
 </section>
 
@@ -172,6 +172,28 @@
 
 <script>
 var pessoas = {"sarah":{"name":"Sarah Barreto","class":"Morse, Class of 2019","from":"Salvador, Bahia.","bio":"Lorem ipsum dolor sit amet, nibh iudicabit in his, eros libris vituperatoribus nec id. Ad his aliquando forensibus. Paulo ceteros salutandi id usu, dicat dicit soleat eam ei. Moderatius quaerendum eu qui, no nec idque mnesarchum. Error petentium interesset ad mea.","picture":"/images/pictures/sarah.png","links":"<a href='http://facebook.com'>Facebook</a>"},"felipe":{"name":"Felipe Aragão Pires","class":"Ezra Stiles, Class of 2019","from":"Rio de Janeiro (carioca da gema).","bio":"Felipe is a rising sophomore, majoring in Computer Science and Economics. He currently serves as <strong>Tech and Media Chair</strong> for the BCY. Felipe is interested in ways to connect Computer Science and the humanities. On campus, he is part of the <strong>Liberal Party</strong> and works as a <strong>Student Developer</strong>.","picture":"/images/pictures/felipe.png","links":"<a href='http://facebook.com/felipearagaopires'>Facebook</a>"},"brbr":{"name":"Bárbara Cruvinel Santiago","class":"Pierson, Class of 2017","from":"Santos, São Paulo.","bio":"Former president of the Brazil Club. Majoring in physics, nibh iudicabit in his, eros libris vituperatoribus nec id. Ad his aliquando forensibus. Paulo ceteros salutandi id usu, dicat dicit soleat eam ei. Moderatius quaerendum eu qui, no nec idque mnesarchum. Error petentium interesset ad mea.","picture":"/images/pictures/brbr.png","links":"<a href='http://facebook.com'>Facebook</a>"},"kenneth":{"name":"Kenneth Jackson","class":"Ezra Stiles, Class of 2017","from":"São Paulo.","bio":"N ibh iudicabit in his, eros libris vituperatoribus nec id. Ad his aliquando forensibus. Paulo ceteros salutandi id usu, dicat dicit soleat eam ei. Moderatius quaerendum eu qui, no nec idque mnesarchum. Error petentium interesset ad mea.","picture":"/images/pictures/kenneth.png","links":"<a href='http://facebook.com'>Facebook</a>"},"jp":{"name":"João Pedro Drechsler","class":"Ezra Stiles, Class of 2016","from":"São Paulo.","bio":"Lorem ipsum dolor sit amet, nibh iudicabit in his, eros libris vituperatoribus nec id. Ad his aliquando forensibus. Paulo ceteros salutandi id usu, dicat dicit soleat eam ei. Moderatius quaerendum eu qui, no nec idque mnesarchum. Error petentium interesset ad mea.","picture":"/images/pictures/jp.png","links":"<a href='http://facebook.com'>Facebook</a>"},"andre":{"name":"André Lucas de Melo","class":"Ezra Stiles, Class of 2018","from":"São Paulo.","bio":"Lorem ipsum dolor sit amet, nibh iudicabit in his, eros libris vituperatoribus nec id. Ad his aliquando forensibus. Paulo ceteros salutandi id usu, dicat dicit soleat eam ei. Moderatius quaerendum eu qui, no nec idque mnesarchum. Error petentium interesset ad mea.","picture":"/images/pictures/andre.png","links":"<a href='http://facebook.com'>Facebook</a>"},"luis":{"name":"Luis Fernando","class":"Jonathan Edwards, Class of 2018","from":"São Paulo.","bio":"Lorem ipsum dolor sit amet, nibh iudicabit in his, eros libris vituperatoribus nec id. Ad his aliquando forensibus. Paulo ceteros salutandi id usu, dicat dicit soleat eam ei. Moderatius quaerendum eu qui, no nec idque mnesarchum. Error petentium interesset ad mea.","picture":"/images/pictures/luis.png","links":"<a href='http://facebook.com'>Facebook</a>"},"dani":{"name":"Dani Brighenti","class":"Ezra Stiles, Class of 2018","from":"São Paulo.","bio":"Lorem ipsum dolor sit amet, nibh iudicabit in his, eros libris vituperatoribus nec id. Ad his aliquando forensibus. Paulo ceteros salutandi id usu, dicat dicit soleat eam ei. Moderatius quaerendum eu qui, no nec idque mnesarchum. Error petentium interesset ad mea.","picture":"/images/pictures/dani.png","links":"<a href='http://facebook.com'>Facebook</a>"},"nat":{"name":"Nathalya Nascimento","class":"Davenport, Class of 2019","from":"Brasília.","bio":"Lorem ipsum dolor sit amet, nibh iudicabit in his, eros libris vituperatoribus nec id. Ad his aliquando forensibus. Paulo ceteros salutandi id usu, dicat dicit soleat eam ei. Moderatius quaerendum eu qui, no nec idque mnesarchum. Error petentium interesset ad mea.","picture":"/images/pictures/nat.png","links":"<a href='http://facebook.com'>Facebook</a>"},"will":{"name":"Willian Hitoshi Kawakami","class":"Ezra Stiles, Class of 2019","from":"São Paulo.","bio":"Lorem ipsum dolor sit amet, nibh iudicabit in his, eros libris vituperatoribus nec id. Ad his aliquando forensibus. Paulo ceteros salutandi id usu, dicat dicit soleat eam ei. Moderatius quaerendum eu qui, no nec idque mnesarchum. Error petentium interesset ad mea.","picture":"/images/pictures/will.png","links":"<a href='http://facebook.com'>Facebook</a>"},"davi":{"name":"Davi Lemos da Silva","class":"Saybrook, Class of 2019","from":"São Paulo.","bio":"Lorem ipsum dolor sit amet, nibh iudicabit in his, eros libris vituperatoribus nec id. Ad his aliquando forensibus. Paulo ceteros salutandi id usu, dicat dicit soleat eam ei. Moderatius quaerendum eu qui, no nec idque mnesarchum. Error petentium interesset ad mea.","picture":"/images/pictures/davi.png","links":"<a href='http://facebook.com'>Facebook</a>"},"guga":{"name":"Gustavo Avena","class":"Ezra Stiles, Class of 2019","from":"Salvador, Bahia.","bio":"Lorem ipsum dolor sit amet, nibh iudicabit in his, eros libris vituperatoribus nec id. Ad his aliquando forensibus. Paulo ceteros salutandi id usu, dicat dicit soleat eam ei. Moderatius quaerendum eu qui, no nec idque mnesarchum. Error petentium interesset ad mea.","picture":"/images/pictures/guga.png","links":"<a href='http://facebook.com'>Facebook</a>"},"cirigliano":{"name":"Luis Fernando Cirigliano","class":"Ezra Stiles, Class of 2019","from":"São Paulo.","bio":"Lorem ipsum dolor sit amet, nibh iudicabit in his, eros libris vituperatoribus nec id. Ad his aliquando forensibus. Paulo ceteros salutandi id usu, dicat dicit soleat eam ei. Moderatius quaerendum eu qui, no nec idque mnesarchum. Error petentium interesset ad mea.","picture":"/images/pictures/cirigliano.png","links":"<a href='http://facebook.com'>Facebook</a>"},"enrico":{"name":"Enrico Löffel","class":"Davenport, Class of 2019","from":"São Paulo.","bio":"Lorem ipsum dolor sit amet, nibh iudicabit in his, eros libris vituperatoribus nec id. Ad his aliquando forensibus. Paulo ceteros salutandi id usu, dicat dicit soleat eam ei. Moderatius quaerendum eu qui, no nec idque mnesarchum. Error petentium interesset ad mea.","picture":"/images/pictures/enrico.png","links":"<a href='http://facebook.com'>Facebook</a>"},"gabriel":{"name":"Gabriel Simões","class":"Ezra Stiles, Class of 2019","from":"São Paulo.","bio":"Lorem ipsum dolor sit amet, nibh iudicabit in his, eros libris vituperatoribus nec id. Ad his aliquando forensibus. Paulo ceteros salutandi id usu, dicat dicit soleat eam ei. Moderatius quaerendum eu qui, no nec idque mnesarchum. Error petentium interesset ad mea.","picture":"/images/pictures/gabriel.png","links":"<a href='http://facebook.com'>Facebook</a>"},"paca":{"name":"Alessandro Pacanowksi","class":"Jonathan Edwards, Class of 2019","from":"Rio de Janeiro.","bio":"Lorem ipsum dolor sit amet, nibh iudicabit in his, eros libris vituperatoribus nec id. Ad his aliquando forensibus. Paulo ceteros salutandi id usu, dicat dicit soleat eam ei. Moderatius quaerendum eu qui, no nec idque mnesarchum. Error petentium interesset ad mea.","picture":"/images/pictures/paca.png","links":"<a href='http://facebook.com'>Facebook</a>"},"raissa":{"name":"Raíssa Müller","class":"Class of 2020","from":"São Paulo.","bio":"Lorem ipsum dolor sit amet, nibh iudicabit in his, eros libris vituperatoribus nec id. Ad his aliquando forensibus. Paulo ceteros salutandi id usu, dicat dicit soleat eam ei. Moderatius quaerendum eu qui, no nec idque mnesarchum. Error petentium interesset ad mea.","picture":"/images/pictures/raissa.png","links":"<a href='http://facebook.com'>Facebook</a>"},"carol":{"name":"Carolina Guimarães","class":"Class of 2020","from":"Vitória, ES.","bio":"Lorem ipsum dolor sit amet, nibh iudicabit in his, eros libris vituperatoribus nec id. Ad his aliquando forensibus. Paulo ceteros salutandi id usu, dicat dicit soleat eam ei. Moderatius quaerendum eu qui, no nec idque mnesarchum. Error petentium interesset ad mea.","picture":"/images/pictures/carol.png","links":"<a href='http://facebook.com'>Facebook</a>"},"saru":{"name":"Gabriel Saruhashi","class":"Class of 2020","from":"São Paulo.","bio":"Lorem ipsum dolor sit amet, nibh iudicabit in his, eros libris vituperatoribus nec id. Ad his aliquando forensibus. Paulo ceteros salutandi id usu, dicat dicit soleat eam ei. Moderatius quaerendum eu qui, no nec idque mnesarchum. Error petentium interesset ad mea.","picture":"/images/pictures/saru.png","links":"<a href='http://facebook.com'>Facebook</a>"}};
+
+function showInfoSection(id, el, bg) {
+  $("#info-main").empty().append(el);
+  $("section.info").fadeIn();
+  if (bg == undefined) {
+    var num = Math.floor(Math.random()*15)+1;
+    var bg = "/images/backgrounds/"+num+".jpg";
+  } else {
+  }
+  $("section.info canvas").attr("src", bg);
+  execBlur();
+  location.hash = "";
+  $("html,body").animate({
+    scrollTop: $("section.info").offset().top,
+  });
+}
+
+function showAbout() {
+  var info = document.createElement("div");
+  $(info).html($("#tmplAbout").html());
+  showInfoSection("about", info, "/images/backgrounds/dinner.jpg");
+}
 
 function showPerson(id) {
   var pessoa = pessoas[id];
@@ -184,16 +206,8 @@ function showPerson(id) {
   $(info).find(".links").html(pessoa.links);
   $(info).find(".picture").css({ backgroundImage: "url("+pessoa.picture+")" });
 
-  $("#about-main").empty().append(info);
-  $("section.about").fadeIn(); // css({ display: "auto" });
-  var num = Math.floor(Math.random()*15)+1;
-  var url = "/images/backgrounds/"+num+".jpg";
-  $("section.about canvas").attr("src", url)
-  execBlur();
+  showInfoSection(id, info);
   location.hash = id;
-  $("html,body").animate({
-    scrollTop: $("section.about").offset().top,
-  });
 }
 
 function closeAbout() {
@@ -216,7 +230,108 @@ $(function() {
     $(".overlay.show").removeClass("show");
   }, 3000);
 });
+</script>
 
+<script type="text/template" id="tmplAbout">
+<div class="about">
+  <h1>About the Brazil Club</h1>
+  <p>
+    The Brazil Club was founded in 2008 by William Hennessey '09. Ever since then, it has helped the propagation of Brazilian culture on Yale campus and the integration of Brazilian undergraduate students. We have a weekly dinner every Monday and promote events in special ocasions.
+  </p>
+  <ul class="alumni">
+    
+    <li>
+      <div class="picture" title="Bárbara Cruvinel Santiago" style="background-image: url(/images/alumni/santiago.jpg)"></div>
+      <div class="content">
+        <div class="name">Bárbara Cruvinel Santiago</div>
+        <div class="class">Pierson '17</div>
+        <div class="position">President (2016)/VP (2014)</div>
+      </div>
+    </li>
+    
+    <li>
+      <div class="picture" title="João Pedro Drechsler" style="background-image: url(/images/alumni/drechsler.jpg)"></div>
+      <div class="content">
+        <div class="name">João Pedro Drechsler</div>
+        <div class="class">Ezra Stiles '16</div>
+        <div class="position">President (2015)/VP (2014)</div>
+      </div>
+    </li>
+    
+    <li>
+      <div class="picture" title="David Molina" style="background-image: url(/images/alumni/molina.jpg)"></div>
+      <div class="content">
+        <div class="name">David Molina</div>
+        <div class="class">Timothy Dwight '15</div>
+        <div class="position">President (2014)</div>
+      </div>
+    </li>
+    
+    <li>
+      <div class="picture" title="Daniel Said Monteiro" style="background-image: url(/images/alumni/said.jpg)"></div>
+      <div class="content">
+        <div class="name">Daniel Said Monteiro</div>
+        <div class="class">Calhoun '14</div>
+        <div class="position">President (2012/2013)</div>
+      </div>
+    </li>
+    
+    <li>
+      <div class="picture" title="Alda Pontes" style="background-image: url(/images/alumni/pontes.jpg)"></div>
+      <div class="content">
+        <div class="name">Alda Pontes</div>
+        <div class="class">Ezra Stiles '14</div>
+        <div class="position">VP (2012/2013)</div>
+      </div>
+    </li>
+    
+    <li>
+      <div class="picture" title="Paulo Sérgio Coelho Filho" style="background-image: url(/images/alumni/coelhofilho.jpg)"></div>
+      <div class="content">
+        <div class="name">Paulo Sérgio Coelho Filho</div>
+        <div class="class">Ezra Stiles '13</div>
+        <div class="position">President (2011)</div>
+      </div>
+    </li>
+    
+    <li>
+      <div class="picture" title="Vinícius Grünberg" style="background-image: url(/images/alumni/grunberg.jpg)"></div>
+      <div class="content">
+        <div class="name">Vinícius Grünberg</div>
+        <div class="class">Silliman '13</div>
+        <div class="position">VP (2011)</div>
+      </div>
+    </li>
+    
+    <li>
+      <div class="picture" title="Lissa Schreurs" style="background-image: url(/images/alumni/schreurs.png)"></div>
+      <div class="content">
+        <div class="name">Lissa Schreurs</div>
+        <div class="class">Silliman '12</div>
+        <div class="position">President (2010)</div>
+      </div>
+    </li>
+    
+    <li>
+      <div class="picture" title="Pedro Mendonça" style="background-image: url(/images/alumni/mendonça.jpg)"></div>
+      <div class="content">
+        <div class="name">Pedro Mendonça</div>
+        <div class="class">Davenport '12</div>
+        <div class="position">VP (2010)</div>
+      </div>
+    </li>
+    
+    <li>
+      <div class="picture" title="William Hennessey" style="background-image: url(/images/alumni/hennessey.jpg)"></div>
+      <div class="content">
+        <div class="name">William Hennessey</div>
+        <div class="class">Davenport '09</div>
+        <div class="position">Founder, President (2009)</div>
+      </div>
+    </li>
+    
+  </ul>
+</div>
 </script>
 
 <script type="text/template" id="tmplPerson">
@@ -237,11 +352,12 @@ $(function() {
 <script>
 $(document).ready(function() {
   execBlur();
-  // $(window).resize(function () {
-  //   $("section, .fullHeight").css({ minHeight: $(window).outerHeight()-5 });
-  // });
+  $(window).resize(function () {
+    $("section").css({ minHeight: $(window).outerHeight() });
+    $(".fullHeight").css({ minHeight: $(window).outerHeight() });
+  });
 
-  $("section").css({ height: $(window).outerHeight() });
+  $("section").css({ minHeight: $(window).outerHeight() });
   $(".fullHeight").css({ minHeight: $(window).outerHeight() });
 });
 </script>

@@ -507,6 +507,8 @@ pre {
   height: 10px;
   display: -webkit-flex;
   display: flex;
+  z-index: 10;
+  position: relative;
   -webkit-justify-content: center;
   justify-content: center;
   /*& > div:nth-child(2) { background: #61A363 }*/
@@ -547,10 +549,25 @@ section.main {
     position: relative;
     padding-left: 420px; }
     section.main main h1 {
-      font-weight: 400; }
+      font-weight: 500;
+      font-size: 20px;
+      margin-bottom: 20px;
+      color: #222; }
     section.main main p {
       font-size: 16px;
       margin-bottom: 20px; }
+      section.main main p a {
+        color: #999;
+        text-decoration: none;
+        transition: .2s all linear; }
+        section.main main p a:hover {
+          color: #0bf; }
+    section.main main h1 + p {
+      font-size: 17px;
+      margin-bottom: 15px; }
+      section.main main h1 + p a {
+        color: #AAA;
+        font-size: 15px; }
     section.main main .team {
       list-style: none;
       margin-left: 0;
@@ -569,45 +586,74 @@ section.main {
           -o-background-size: cover;
           background-size: cover; }
 
-section.about {
+section.info {
   position: relative;
   overflow: hidden;
   font-family: Avenir, sans-serif; }
-  section.about aside {
-    position: relative;
+  section.info aside {
+    position: absolute;
     width: 30%;
-    float: left;
+    top: 0;
+    bottom: 0;
     overflow: hidden;
     box-shadow: inset -7px 0 9px -7px rgba(0, 0, 0, 0.4), inset 0 7px 9px -7px rgba(0, 0, 0, 0.4); }
-    section.about aside footer {
+    section.info aside footer {
       position: absolute;
       color: white;
       bottom: 20px;
       width: 100%;
       text-align: center;
       font-size: 14px; }
-  section.about .close-btn {
+  section.info .close-btn {
     display: table;
     position: absolute;
     right: 20px;
     top: 10px;
     cursor: pointer;
     padding: 5px 10px; }
-    section.about .close-btn:before {
+    section.info .close-btn:before {
       content: 'x';
       color: #666;
       font-size: 25px;
       font-weight: 300;
       font-family: Avenir, Arial, sans-serif; }
-    section.about .close-btn:hover:before {
+    section.info .close-btn:hover:before {
       color: #333; }
-  section.about main {
+  section.info main {
     margin-left: 30%;
     padding-left: 50px;
-    padding-top: 50px;
+    padding-top: 50px; }
+  section.info .about {
+    padding-right: 40px;
+    max-width: 700px; }
+    section.info .about p {
+      max-width: 600px;
+      font-size: 14px;
+      margin-bottom: 20px; }
+    section.info .about .alumni {
+      list-style: none;
+      margin-left: 0; }
+      section.info .about .alumni li {
+        font-size: 14px;
+        display: inline-block;
+        width: 300px; }
+        section.info .about .alumni li .picture {
+          width: 60px;
+          float: left;
+          height: 60px;
+          margin-bottom: 20px;
+          /*border-radius: $img-size;*/
+          background-position: center;
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          background-size: cover; }
+        section.info .about .alumni li .content {
+          margin-left: 70px; }
+  section.info .person {
     max-width: 600px;
     font-family: Avenir; }
-    section.about main .picture {
+    section.info .person .picture {
       width: 200px;
       height: 200px;
       cursor: pointer;
@@ -618,20 +664,20 @@ section.about {
       -moz-background-size: cover;
       -o-background-size: cover;
       background-size: cover; }
-    section.about main .name {
+    section.info .person .name {
       font-size: 30px;
       color: #333; }
-    section.about main .class {
+    section.info .person .class {
       font-size: 20px;
       line-height: 2;
       color: #555; }
-    section.about main p {
+    section.info .person p {
       line-height: 1.6; }
-    section.about main .from {
+    section.info .person .from {
       font-size: 16px;
       font-weight: 400;
       color: #888; }
-    section.about main .bio {
+    section.info .person .bio {
       color: #444;
       font-size: 16px; }
 

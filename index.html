@@ -14,14 +14,14 @@ title: Brazil Club at Yale
     <div id="player"></div>
     <div class="overlay show">
       <div class="text">
-        m (mute)<br />space (pause)
+        m (mute)<br />space (pause,
       </div>
     </div>
   </div>
   <main>
     <h1>Brazil Club at Yale</h1>
     <p>
-      The BCY is the community of Brazilian undergraduate students at Yale University.
+    The BCY is the community of Brazilian undergrad students at Yale University. <a href="javascript:showAbout()">Learn more.</a>
     </p>
     <p>
       <a href="http://facebook.com/brazilclubatyale">Check out our Facebook to see what we're up to</a>
@@ -44,7 +44,7 @@ title: Brazil Club at Yale
   <div></div>
 </div>
 
-<section class="about" style="display: none">
+<section class="info" style="display: none">
   <aside class="fullHeight">
     <div class="bg-wrapper">
       <canvas class="blur" src="{{ site.baseurl }}/images/backgrounds/4.jpg" data-blur="0"></canvas>
@@ -56,7 +56,7 @@ title: Brazil Club at Yale
   </aside>
   <div class="close-btn" onClick="closeAbout()"></div>
 
-  <main id="about-main">
+  <main id="info-main">
   </main>
 </section>
 
@@ -65,6 +65,28 @@ title: Brazil Club at Yale
 
 <script>
 var pessoas = {{ site.data.team | jsonify }};
+
+function showInfoSection(id, el, bg) {
+  $("#info-main").empty().append(el);
+  $("section.info").fadeIn();
+  if (bg == undefined) {
+    var num = Math.floor(Math.random()*15)+1;
+    var bg = "{{ site.baseurl }}/images/backgrounds/"+num+".jpg";
+  } else {
+  }
+  $("section.info canvas").attr("src", bg);
+  execBlur();
+  location.hash = "";
+  $("html,body").animate({
+    scrollTop: $("section.info").offset().top,
+  });
+}
+
+function showAbout() {
+  var info = document.createElement("div");
+  $(info).html($("#tmplAbout").html());
+  showInfoSection("about", info, "{{ site.baseurl }}/images/backgrounds/dinner.jpg");
+}
 
 function showPerson(id) {
   var pessoa = pessoas[id];
@@ -77,16 +99,8 @@ function showPerson(id) {
   $(info).find(".links").html(pessoa.links);
   $(info).find(".picture").css({ backgroundImage: "url({{ site.baseurl }}"+pessoa.picture+")" });
 
-  $("#about-main").empty().append(info);
-  $("section.about").fadeIn(); // css({ display: "auto" });
-  var num = Math.floor(Math.random()*15)+1;
-  var url = "{{ site.baseurl }}/images/backgrounds/"+num+".jpg";
-  $("section.about canvas").attr("src", url)
-  execBlur();
+  showInfoSection(id, info);
   location.hash = id;
-  $("html,body").animate({
-    scrollTop: $("section.about").offset().top,
-  });
 }
 
 function closeAbout() {
@@ -109,7 +123,27 @@ $(function() {
     $(".overlay.show").removeClass("show");
   }, 3000);
 });
+</script>
 
+<script type="text/template" id="tmplAbout">
+<div class="about">
+  <h1>About the Brazil Club</h1>
+  <p>
+    The Brazil Club was founded in 2008 by William Hennessey '09. Ever since then, it has helped the propagation of Brazilian culture on Yale campus and the integration of Brazilian undergraduate students. We have a weekly dinner every Monday and promote events in special ocasions.
+  </p>
+  <ul class="alumni">
+    {% for p in site.data.alumni %}
+    <li>
+      <div class="picture" title="{{ p.name }}" style="background-image: url({{ site.baseurl }}{{ p.picture }})"></div>
+      <div class="content">
+        <div class="name">{{ p.name }}</div>
+        <div class="class">{{ p.class }}</div>
+        <div class="position">{{ p.position }}</div>
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
 </script>
 
 <script type="text/template" id="tmplPerson">
@@ -130,11 +164,12 @@ $(function() {
 <script>
 $(document).ready(function() {
   execBlur();
-  // $(window).resize(function () {
-  //   $("section, .fullHeight").css({ minHeight: $(window).outerHeight()-5 });
-  // });
+  $(window).resize(function () {
+    $("section").css({ minHeight: $(window).outerHeight() });
+    $(".fullHeight").css({ minHeight: $(window).outerHeight() });
+  });
 
-  $("section").css({ height: $(window).outerHeight() });
+  $("section").css({ minHeight: $(window).outerHeight() });
   $(".fullHeight").css({ minHeight: $(window).outerHeight() });
 });
 </script>
