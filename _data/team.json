@@ -183,5 +183,21 @@
     "bio": "Lorem ipsum dolor sit amet, nibh iudicabit in his, eros libris vituperatoribus nec id. Ad his aliquando forensibus. Paulo ceteros salutandi id usu, dicat dicit soleat eam ei. Moderatius quaerendum eu qui, no nec idque mnesarchum. Error petentium interesset ad mea.",
     "picture": "/images/pictures/saru.png",
     "links": "<a href='http://facebook.com'>Facebook</a>"
+  },
+  "michael": {
+    "name": "Michael Borger",
+    "class": "Class of 2020",
+    "from": "São Paulo.",
+    "bio": "Lorem ipsum dolor sit amet, nibh iudicabit in his, eros libris vituperatoribus nec id. Ad his aliquando forensibus. Paulo ceteros salutandi id usu, dicat dicit soleat eam ei. Moderatius quaerendum eu qui, no nec idque mnesarchum. Error petentium interesset ad mea.",
+    "picture": "/images/pictures/michael.png",
+    "links": "<a href='http://facebook.com'>Facebook</a>"
+  },
+  "Seon Augusto": {
+    "name": "Seon Augusto",
+    "class": "Class of 2020",
+    "from": "São Paulo.",
+    "bio": "Lorem ipsum dolor sit amet, nibh iudicabit in his, eros libris vituperatoribus nec id. Ad his aliquando forensibus. Paulo ceteros salutandi id usu, dicat dicit soleat eam ei. Moderatius quaerendum eu qui, no nec idque mnesarchum. Error petentium interesset ad mea.",
+    "picture": "/images/pictures/seon.png",
+    "links": "<a href='http://facebook.com'>Facebook</a>"
   }
 }
