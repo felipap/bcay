@@ -129,10 +129,10 @@
     "picture": "/images/pictures/enrico.png"
   },
   "simoes": {
-    "name": "Gabriel Simões",
-    "class": "Ezra Stiles, Class of 2019",
-    "from": "São Paulo.",
-    "bio": "",
+    "name": "Gabriel Mosquera Simões",
+    "class": "Jonathan Edwards, Class of 2017",
+    "from": "Campinas.",
+    "bio": "Gabriel is a senior at UNICAMP, in Brazil, studying Mechanical Engineering. He was part of the 2015-2016 Y-VISP program, studying Computer Science and Entrepreneurship at Yale for a year. Interested in technology and entrepreneurship, Gabriel is currently working as a developer at the Industry Lab, a tech startup in Cambridge, MA.",
     "picture": "/images/pictures/gabriel.png"
   },
   "paca": {
@@ -176,7 +176,7 @@
     "class": "Class of 2020",
     "from": "Salvador (Bahia de todos os santos, encantos e axé).",
     "bio": "Seon is a prefrosh who intends to major in Chemical and Environmental Engineering. He is very passionate about the sciences and their possibilities, specially chemistry and biology; a passion born with scientific olympiads. However, he is also willing to enjoy every opportunity of a Liberal Arts education, studying from philosophy to computer science. He likes dancing, teaching and stories about magical/fictional worlds.",
-    "picture": "/images/pictures/seon.png",
+    "picture": "/images/pictures/seon.jpg",
     "links": "<a href='http://facebook.com/seonaugusto'>Facebook</a>"
   }
 }
