@@ -1,10 +1,11 @@
 {
     "sarah": {
-    "name": "Sarah Barreto",
+    "name": "Sarah Barreto Ornellas",
     "class": "Morse, Class of 2019",
     "from": "Salvador, Bahia.",
-    "bio": "",
-    "picture": "/images/pictures/sarah.png"
+    "bio": "Sarah is a rising sophomore and a prospective <strong>Biomedical Engineering</strong> major. Her experiences in one of the largest – and socially unequal – cities of Brazil sparkled her interest in health inequities and how to solve them. Sarah is involved in Yale’s chapter of <strong>Engineering World Health</strong>, the <strong>Yale Global Health Review</strong> and <strong>AIESEC</strong>. In her free time, she pursues her interests in <strong>dance</strong> and <strong>photography</strong>.",
+    "picture": "/images/pictures/sarah.png",
+    "links": "<a href='https://www.facebook.com/sarah.ornellas?fref=ts'>Facebook</a>"
   },
   "felipe": {
     "name": "Felipe Aragão Pires",
@@ -53,9 +54,10 @@
   "luis": {
     "name": "Luis Fernando",
     "class": "Jonathan Edwards, Class of 2018",
-    "from": "São Paulo.",
-    "bio": "",
-    "picture": "/images/pictures/luis.png"
+    "from": "Guarulhos (NOT São Paulo).",
+    "bio": "Luis Fernando is a rising junior from Guarulhos in Jonathan Edwards College, majoring in <strong>Astrophysics</strong>. He served as the BCY VP during 2015-2016, and currently is the <strong>President</strong>-elect for the Club. At Yale, Luis is the Newbie <strong>Captain of the Ballroom Dance Team</strong>; one of the <strong>International Peer Liaisons</strong>; a <strong>voluntary teacher for Splash</strong>; and a part-time <strong>Astrophysics researcher</strong>. You are also likely to find him in the JE Buttery playing pool and eating chicken quesadillas, or watching Parks and Rec in his room.",
+    "picture": "/images/pictures/luis.png",
+    "links": "<a href='https://www.facebook.com/luisfernando.m.p.valle'>Facebook</a>"
   },
   "osorio": {
     "name": "Carlos Osorio",
@@ -87,7 +89,7 @@
   },
   "will": {
     "name": "Willian Hitoshi Kawakami",
-    "class": "Morse, Y-VISP 2015 (Yale Visiting International Program)",
+    "class": "Morse, Y-VISP 2016",
     "from": "Osasco, São Paulo.",
     "bio": "Willian is a Exchange Student majoring in Computer Science at UNICAMP (Universidade Estadual de Campinas) that  had the amazing opportunity to taste a little bit of the Liberal Arts at Yale.",
     "picture": "/images/pictures/will.png"
@@ -115,10 +117,10 @@
     "picture": "/images/pictures/guga.png"
   },
   "cirigliano": {
-    "name": "Luis Fernando Cirigliano",
-    "class": "Ezra Stiles, Class of 2019",
-    "from": "São Paulo.",
-    "bio": "",
+    "name": "Luiz Fernando Cirigliano Villela",
+    "class": "Saybrook, Y-VISP 2016",
+    "from": "Rio de Janeiro (cidade maravilhosa).",
+    "bio": "Luiz is a senior in Computer Engineering, at UNICAMP, Brazil. Interested in <strong>mobile apps</strong>, <strong>social networks</strong> and <strong>data analysis</strong>, he’s currently interning at Google LA over the summer.",
     "picture": "/images/pictures/cirigliano.png"
   },
   "enrico": {
@@ -130,9 +132,9 @@
   },
   "simoes": {
     "name": "Gabriel Mosquera Simões",
-    "class": "Jonathan Edwards, Class of 2017",
+    "class": "Jonathan Edwards, Y-VISP 2016",
     "from": "Campinas.",
-    "bio": "Gabriel is a senior at UNICAMP, in Brazil, studying Mechanical Engineering. He was part of the 2015-2016 Y-VISP program, studying Computer Science and Entrepreneurship at Yale for a year. Interested in technology and entrepreneurship, Gabriel is currently working as a developer at the Industry Lab, a tech startup in Cambridge, MA.",
+    "bio": "Gabriel is a senior at UNICAMP, in Brazil, studying <strong>Mechanical Engineering</strong>. He was part of the 2015-2016 Y-VISP program, studying <strong>Computer Science and Entrepreneurship</strong> at Yale for a year. Interested in <strong>technology and entrepreneurship</strong>, Gabriel is currently working as a developer at the <strong>Industry Lab</strong>, a tech startup in Cambridge, MA.",
     "picture": "/images/pictures/gabriel.png"
   },
   "paca": {
