@@ -29,7 +29,7 @@ title: Brazil Club at Yale
     <ul class="team">
       {% for _pessoa in site.data.team %}
       {% assign pessoa = _pessoa[1] %}
-      <li onClick="showPerson('{{ _pessoa[0] }}')">
+      <li onClick="showPerson('{{ _pessoa[0] }}')" {% if pessoa.bio == "" %}class="incomplete"{% endif %}>
         <div title="{{ pessoa.name }}" style="background-image: url({{ site.baseurl }}{{ pessoa.picture }})"></div>
       </li>
       {% endfor %}

@@ -110,11 +110,12 @@
     "picture": "/images/pictures/guimaraes.png"
   },
   "guga": {
-    "name": "Gustavo Avena",
-    "class": "Ezra Stiles, Class of 2019",
+    "name": "Gustavo Galvão Avena",
+    "class": "Calhoun, Y-VISP ’16, Salvador",
     "from": "Salvador, Bahia.",
-    "bio": "",
-    "picture": "/images/pictures/guga.png"
+    "bio": "Gustavo is a junior in Computer Engineering, at UNICAMP, Brazil. Interested in <strong>web development</strong>, <strong>information security</strong> and <strong>entrepreneurship</strong>, he’s currently interning at Paperless Post, a startup in New York City.",
+    "picture": "/images/pictures/guga.png",
+    "links": "<a href='https://www.facebook.com/gugaavena'>Facebook</a>"
   },
   "cirigliano": {
     "name": "Luiz Fernando Cirigliano Villela",
@@ -177,7 +178,7 @@
     "name": "Seon Augusto de Souza Ferreira",
     "class": "Class of 2020",
     "from": "Salvador (Bahia de todos os santos, encantos e axé).",
-    "bio": "Seon is a prefrosh who intends to major in Chemical and Environmental Engineering. He is very passionate about the sciences and their possibilities, specially chemistry and biology; a passion born with scientific olympiads. However, he is also willing to enjoy every opportunity of a Liberal Arts education, studying from philosophy to computer science. He likes dancing, teaching and stories about magical/fictional worlds.",
+    "bio": "Seon is a prefrosh who intends to major in <strong>Chemical and Environmental Engineering</strong>. He is very passionate about the sciences and their possibilities, specially chemistry and biology; a passion born with <strong>scientific olympiads</strong>. However, he is also willing to enjoy every opportunity of a Liberal Arts education, studying from philosophy to computer science. He likes <strong>dancing</strong>, <strong>teaching</strong> and <strong>stories about magical/fictional worlds</strong>.",
     "picture": "/images/pictures/seon.jpg",
     "links": "<a href='http://facebook.com/seonaugusto'>Facebook</a>"
   }

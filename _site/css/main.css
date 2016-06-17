@@ -574,6 +574,10 @@ section.main {
       margin-top: 15px; }
       section.main main .team li {
         display: inline-block; }
+        section.main main .team li.incomplete {
+          -webkit-filter: grayscale(100%);
+          /* Chrome, Safari, Opera */
+          filter: grayscale(100%); }
         section.main main .team li div {
           width: 60px;
           height: 60px;
@@ -626,10 +630,13 @@ section.info {
   section.info .about {
     padding-right: 40px;
     max-width: 700px; }
+    section.info .about h1 {
+      margin-bottom: 20px; }
     section.info .about p {
       max-width: 600px;
-      font-size: 14px;
-      margin-bottom: 20px; }
+      font-size: 15px;
+      margin-bottom: 30px;
+      color: #444; }
     section.info .about .alumni {
       list-style: none;
       margin-left: 0; }
