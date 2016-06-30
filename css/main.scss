@@ -444,7 +444,9 @@ section.info {
   section.info {
     border-top: 1px solid #DDD;
     background: #FAFAFA;
-    min-height: auto !important;
+    position: fixed;
+    top: 0;
+    z-index: 10;   min-height: auto !important;
 
     main {
       background: #FAFAFA;
