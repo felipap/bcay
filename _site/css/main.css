@@ -659,6 +659,7 @@ section.info {
           margin-left: 70px; }
   section.info .person {
     max-width: 600px;
+    font-size: 15px;
     font-family: Avenir; }
     section.info .person .picture {
       width: 200px;
@@ -672,7 +673,7 @@ section.info {
       -o-background-size: cover;
       background-size: cover; }
     section.info .person .name {
-      font-size: 30px;
+      font-size: 2em;
       color: #333; }
     section.info .person .class {
       font-size: 20px;
@@ -716,6 +717,55 @@ section.info {
     transition: .1s all linear;
     opacity: 1; }
 
+@media screen and (max-width: 800px) {
+  section.main {
+    width: 100%;
+    padding-top: 30px; }
+    section.main main {
+      padding-left: 0;
+      width: 90%;
+      margin: auto; }
+    section.main .SnapPlayer {
+      display: none; }
+
+  section.info {
+    border-top: 1px solid #DDD;
+    background: #FAFAFA;
+    min-height: auto !important; }
+    section.info main {
+      background: #FAFAFA;
+      padding: 30px 20px;
+      margin-left: 0;
+      padding-bottom: 20px; }
+      section.info main .person {
+        font-size: 15px; }
+        section.info main .person .picture {
+          width: 100px;
+          height: 100px; }
+    section.info aside {
+      box-shadow: none;
+      position: relative;
+      min-height: 100px !important;
+      width: 100%; }
+      section.info aside canvas, section.info aside .blackout {
+        display: none; }
+      section.info aside .bg-wrapper {
+        z-index: 0;
+        background: #416CB1;
+        background: #FCD111; }
+      section.info aside footer {
+        bottom: 0;
+        text-align: right;
+        padding: 0 30px;
+        font-size: 15px;
+        color: #222;
+        line-height: 100px; }
+
+  .stripes.bottom {
+    display: none; } }
+@media screen and (min-width: 800px) {
+  .stripes.mobile {
+    display: none; } }
 .background {
   position: fixed;
   top: 0;

@@ -3,6 +3,10 @@ function onYouTubePlayerAPIReady() {
   var width = 360, // 768/2,
       height = 1280/2;
 
+  if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    return;
+  }
+
   player = new YT.Player('player', {
     playerVars: {
       autoplay: 1,
@@ -36,6 +40,7 @@ function onPlayerReady(event) {
     listType: "playlist",
   });
   player.mute();
+  player.setLoop(true);
   
   var firstClick = true;
   $(".SnapPlayer .overlay").click(function () {
@@ -57,54 +62,57 @@ function togglePlay() {
   }
 }
 
-document.onkeydown = function (e) {
-  e = e || window.event;
-  
-  if (!player) {
-    return;
-  }
-
-  if (e.keyCode == '39') { // right
-    player.nextVideo();
-  } else if (e.keyCode == '37') { // left
-    player.previousVideo();
-  } else if (e.keyCode == '38') { // up
-    player.setVolume(Math.min(100, player.getVolume()+20));
-  } else if (e.keyCode == '40') { // down
-    player.setVolume(Math.max(0, player.getVolume()-20));
-  } else if (e.keyCode == '32') { // space
-    togglePlay();
-  } else if (e.keyCode == 77) { // m
-    if (player.isMuted()) {
-      player.unMute();
-    } else {
-      player.mute();
+function setupSnaps() {
+  document.onkeydown = function (e) {
+    e = e || window.event;
+    
+    if (!player) {
+      return;
     }
-  } else {
-    return true;
-  }
 
-  e.preventDefault();
-  return false;
-};
+    if (e.keyCode == '39') { // right
+      player.nextVideo();
+    } else if (e.keyCode == '37') { // left
+      player.previousVideo();
+    } else if (e.keyCode == '38') { // up
+      player.setVolume(Math.min(100, player.getVolume()+20));
+    } else if (e.keyCode == '40') { // down
+      player.setVolume(Math.max(0, player.getVolume()-20));
+    } else if (e.keyCode == '32') { // space
+      togglePlay();
+    } else if (e.keyCode == 77) { // m
+      if (player.isMuted()) {
+        player.unMute();
+      } else {
+        player.mute();
+      }
+    } else {
+      return true;
+    }
 
-//this pauses the video when it's out of view, just wrap your video in .m-//video
-$(window).scroll(function() {
-  var hT = $('.m-video').height(),
-      wS = $(this).scrollTop();
-  
-  if (player == undefined || player.pauseVideo == undefined) {
-    return;
-  }
+    e.preventDefault();
+    return false;
+  };
 
-  if (wS > hT) {
-    player.pauseVideo();
-  } else {
-    player.playVideo();
-  }
-});
 
-$(function() {
-  var mt = 610; // $(".SnapPlayer").outerHeight()/2;
-  // $("section.main").css({ marginTop: (Math.max(0,$(window).height()-mt)/2) });
-});
+  //this pauses the video when it's out of view, just wrap your video in .m-//video
+  $(window).scroll(function() {
+    var hT = $('.m-video').height(),
+        wS = $(this).scrollTop();
+    
+    if (player == undefined || player.pauseVideo == undefined) {
+      return;
+    }
+
+    if (wS > hT) {
+      player.pauseVideo();
+    } else {
+      player.playVideo();
+    }
+  });
+
+  $(function() {
+    var mt = 610; // $(".SnapPlayer").outerHeight()/2;
+    // $("section.main").css({ marginTop: (Math.max(0,$(window).height()-mt)/2) });
+  });
+}

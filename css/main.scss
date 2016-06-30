@@ -334,6 +334,7 @@ section.info {
 
   .person {
     max-width: 600px;
+    font-size: 15px;
 
     .picture {
       $dim: 200px;
@@ -354,7 +355,7 @@ section.info {
     font-family: Avenir;
 
     .name {
-      font-size: 30px;
+      font-size: 2em;
       color: #333;
     }
 
@@ -420,9 +421,77 @@ section.info {
 
 
 @media screen and (max-width: $on-laptop) {
+  section.main {
+    width: 100%;
+    padding-top: 30px;
+
+    main {
+      padding-left: 0;
+      width: 90%;
+      margin: auto;
+    }
+
+    .SnapPlayer {
+      display: none;
+    }
+  }
+
+  section.info {
+    border-top: 1px solid #DDD;
+    background: #FAFAFA;
+    min-height: auto !important;
+
+    main {
+      background: #FAFAFA;
+      padding: 30px 20px;
+      
+      margin-left: 0;
+      padding-bottom: 20px;
+
+      .person {
+        font-size: 15px;
+
+        .picture {
+          width: 100px;
+          height: 100px;
+        }
+      }
+    }
+
+    aside {
+      box-shadow: none;
+
+      canvas, .blackout { display: none; }
+      .bg-wrapper {
+        z-index: 0;
+        background: #416CB1;
+        background: #FCD111;
+      }
+
+      footer {
+        bottom: 0;
+        text-align: right;
+        padding: 0 30px;
+        font-size: 15px;
+        color: #222;
+        line-height: 100px;
+      }
+
+      position: relative;
+      min-height: 100px !important;
+      width: 100%;
+    }
+  }
+
+  .stripes.bottom {
+    display: none;
+  }
 }
 
 @media screen and (min-width: $on-laptop) {
+  .stripes.mobile {
+    display: none;
+  }
 }
 
 

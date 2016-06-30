@@ -9,6 +9,13 @@ title: Brazil Club at Yale
 <body class="PageHome">
 <script src="http://www.youtube.com/iframe_api"></script>
 
+<div class="stripes mobile top">
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+
 <section class="main">
   <div class="SnapPlayer">
     <div id="player"></div>
@@ -45,6 +52,9 @@ title: Brazil Club at Yale
 </div>
 
 <section class="info" style="display: none">
+  <main id="info-main">
+  </main>
+
   <aside class="fullHeight">
     <div class="bg-wrapper">
       <canvas class="blur" src="{{ site.baseurl }}/images/backgrounds/4.jpg" data-blur="0"></canvas>
@@ -56,13 +66,20 @@ title: Brazil Club at Yale
   </aside>
   <div class="close-btn" onClick="closeAbout()"></div>
 
-  <main id="info-main">
-  </main>
 </section>
 
 <script src="{{ site.baseurl }}/snaps.js"></script>
 <script src="{{ site.baseurl }}/blur.js"></script>
 
+<script>
+function isMobile() {
+  return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+}
+
+if (!isMobile()) {
+  setupSnaps()
+}
+</script>
 <script>
 var pessoas = {{ site.data.team | jsonify }};
 
