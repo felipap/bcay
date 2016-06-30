@@ -443,10 +443,16 @@ section.info {
 
   section.info {
     border-top: 1px solid #DDD;
+    width: 100%;
     background: #FAFAFA;
     position: fixed;
     top: 0;
-    z-index: 10;   min-height: auto !important;
+    z-index: 10;
+    //min-height: auto !important;
+
+    .close-btn::before {
+      font-size: 40px;
+    }
 
     main {
       background: #FAFAFA;
@@ -466,6 +472,7 @@ section.info {
     }
 
     aside {
+      display: none;
       box-shadow: none;
 
       canvas, .blackout { display: none; }

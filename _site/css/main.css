@@ -733,11 +733,13 @@ section.info {
 
   section.info {
     border-top: 1px solid #DDD;
+    width: 100%;
     background: #FAFAFA;
     position: fixed;
     top: 0;
-    z-index: 10;
-    min-height: auto !important; }
+    z-index: 10; }
+    section.info .close-btn::before {
+      font-size: 40px; }
     section.info main {
       background: #FAFAFA;
       padding: 30px 20px;
@@ -749,6 +751,7 @@ section.info {
           width: 100px;
           height: 100px; }
     section.info aside {
+      display: none;
       box-shadow: none;
       position: relative;
       min-height: 100px !important;

@@ -126,7 +126,7 @@ function closeAbout() {
   $("html,body").animate({ scrollTop: 0 },
       function () {
         location.hash = "";
-        $("section.about").slideUp();
+        $("section.info").fadeOut();
       });
 }
 
