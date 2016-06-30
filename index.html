@@ -6,7 +6,7 @@ title: Brazil Club at Yale
 
 {% include head.html %}
 
-<body class="PageHome">
+  <body class="PageHome">
 <script src="http://www.youtube.com/iframe_api"></script>
 
 <div class="stripes mobile top">
@@ -117,7 +117,9 @@ function showPerson(id) {
   $(info).find(".picture").css({ backgroundImage: "url({{ site.baseurl }}images/pictures/"+pessoa.picture+")" });
 
   showInfoSection(id, info);
-  location.hash = id;
+  if (!isMobile()) {
+    location.hash = id;
+  }
 }
 
 function closeAbout() {

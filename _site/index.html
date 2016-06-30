@@ -23,7 +23,7 @@
 </head>
 
 
-<body class="PageHome">
+  <body class="PageHome">
 <script src="http://www.youtube.com/iframe_api"></script>
 
 <div class="stripes mobile top">
@@ -259,7 +259,9 @@ function showPerson(id) {
   $(info).find(".picture").css({ backgroundImage: "url(images/pictures/"+pessoa.picture+")" });
 
   showInfoSection(id, info);
-  location.hash = id;
+  if (!isMobile()) {
+    location.hash = id;
+  }
 }
 
 function closeAbout() {
