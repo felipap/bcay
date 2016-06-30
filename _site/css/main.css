@@ -720,7 +720,7 @@ section.info {
 @media screen and (max-width: 800px) {
   section.main {
     width: 100%;
-    padding-top: 30px; }
+    padding-top: 20px; }
     section.main main {
       padding-left: 0;
       width: 95%;
