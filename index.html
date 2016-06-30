@@ -30,7 +30,7 @@ title: Brazil Club at Yale
       {% for _pessoa in site.data.team %}
       {% assign pessoa = _pessoa[1] %}
       <li onClick="showPerson('{{ _pessoa[0] }}')" {% if pessoa.bio == "" %}class="incomplete"{% endif %}>
-        <div title="{{ pessoa.name }}" style="background-image: url({{ site.baseurl }}{{ pessoa.picture }})"></div>
+        <div title="{{ pessoa.name }}" style="background-image: url({{ site.baseurl }}/images/smallpics/{{ pessoa.picture }})"></div>
       </li>
       {% endfor %}
     </ul>
@@ -97,7 +97,7 @@ function showPerson(id) {
   $(info).find(".from").html(pessoa.from); 
   $(info).find(".bio").html(pessoa.bio);
   $(info).find(".links").html(pessoa.links);
-  $(info).find(".picture").css({ backgroundImage: "url({{ site.baseurl }}"+pessoa.picture+")" });
+  $(info).find(".picture").css({ backgroundImage: "url({{ site.baseurl }}images/pictures/"+pessoa.picture+")" });
 
   showInfoSection(id, info);
   location.hash = id;
