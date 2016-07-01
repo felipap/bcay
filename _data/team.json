@@ -31,7 +31,7 @@
   },
   "kenneth": {
     "name": "Kenneth Jackson",
-    "class": "Ezra Stiles, Class of 2017",
+    "class": "Jonathan Edwards, Class of 2017",
     "from": "São Paulo.",
     "bio": "sou Kenneth! Minha cor preferida e o amarelo.",
     "picture": "kenneth.png"
@@ -39,8 +39,8 @@
   "jp": {
     "name": "João Pedro Drechsler",
     "class": "Ezra Stiles, Class of 2016",
-    "from": "São Paulo.",
-    "bio": "",
+    "from": "Porto Alegre, Rio Grande do Sul.",
+    "bio": "João Pedro graduated in 2016 with a B.A. in <strong>Economics</strong>. At Yale, he was involved in the <strong>International Relations Association</strong>, was the <strong>president for the BCY</strong>, served as <strong>head counselor for OIS</strong>, and worked in the <strong>Elmseed Enterprise Fund</strong>. He is <strong>interested in public policy</strong> and will pursue a career in finance after Yale.",
     "picture": "jp.png"
   },
 
@@ -61,14 +61,14 @@
   },
   "osorio": {
     "name": "Carlos Osorio",
-    "class": "Class of 2020",
+    "class": "Branford, Class of 2020",
     "from": "Rio de Janeiro.",
     "bio": "",
     "picture": "osorio.png"
   },
   "brighenti": {
     "name": "Dani Brighenti",
-    "class": "Ezra Stiles, Class of 2018",
+    "class": "Davenport, Class of 2018",
     "from": "",
     "bio": "Dani Brighenti is a rising junior, <strong>History major</strong> and <strong>aspiring journalist</strong>. She is a <strong>staff reporter for the Yale Daily News</strong>, where she spends most of her time, and is <strong>Vice-President of the Yale International Students Organization</strong>. Originally from São Paulo, Dani has moved around most of her life and most recently lived in Buenos Aires, Argentina before coming to Yale. <strong>She <em>really</em> likes to run</strong>.",
     "picture": "dani.png"
@@ -82,14 +82,7 @@
   },
   "fritsch": {
     "name": "Gabriel Fritsch",
-    "class": "Class of 2020",
-    "from": "Rio de Janeiro.",
-    "bio": "",
-    "picture": "fritsch.png"
-  },
-  "fritsch": {
-    "name": "Gabriel Fritsch",
-    "class": "Class of 2020",
+    "class": "Davenport, Class of 2020",
     "from": "Rio de Janeiro.",
     "bio": "",
     "picture": "fritsch.png"
@@ -106,7 +99,8 @@
     "class": "Class of 2020",
     "from": "Campina Grande, Paraíba (Terra do maior São João do Mundo).",
     "bio": "Maria Eduarda is a prefrosh who intends to major in <strong>Electrical Engineering and Economics</strong>. She is passioned about <strong>startups, entrepreneurship and education</strong>, willing to explore these areas within her 4 years at Yale. Maria is interested in <strong>connecting social sciences and technology</strong> in order to improve how we currently approach the concept of leadership. Furthermore, she intends to keep working with entrepreneurship in the future.",
-    "picture": "maria.png"
+    "picture": "maria.png",
+    "links": "<a href='https://www.facebook.com/mariaedu.santana'>Facebook</a>"
   },
   "davi": {
     "name": "Davi Lemos da Silva",
@@ -118,9 +112,9 @@
   },
   "guimaraes": {
     "name": "Antonio Guimarães",
-    "class": "Class of 2020",
-    "from": "São Paulo.",
-    "bio": "",
+    "class": "Siliman, Class of 2018",
+    "from": "Rio de Janeiro.",
+    "bio": "Antonio is a rising junior in Silliman College, majoring in <strong>Economics</strong>, with a special interest for the (ir)rationality that dictates the behaviour of the 21st century market agents. On  campus, Antonio is an <strong>ambassador for Firefly</strong>, a social networking mobile app, as well as a defensive midfielder for the <strong>Yale Club Soccer team</strong>. He also loves <strong>photography</strong>.",
     "picture": "guimaraes.png"
   },
   "guga": {
@@ -143,7 +137,7 @@
     "class": "Davenport, Class of 2019",
     "from": "São Paulo.",
     "bio": "São Paulo (Paulistano, meu). Enrico is a rising sophomore, majoring in <strong>Electrical Engineering and Computer Science</strong>. He is currently the <strong>Treasurer of the BCY</strong>, being the only candidate who wasn’t named in the Panama Papers. On campus, he works as a <strong>Cluster Tech</strong>, and you will most likely find him going from one computer cluster to another. Despite being a STEM student, Enrico is into <strong>Model UN</strong> conferences, and during his freshman year he was involved in the Cultural Council of the Yale International Students’ Organization.",
-    "picture": "enrico.png"
+    "picture": "enrico.jpg"
   },
   "simoes": {
     "name": "Gabriel Mosquera Simões",
