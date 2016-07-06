@@ -638,11 +638,12 @@ section.info {
     section.info .about p {
       max-width: 600px;
       font-size: 15px;
-      margin-bottom: 30px;
+      margin-bottom: 15px;
       color: #444; }
     section.info .about .alumni {
       list-style: none;
-      margin-left: 0; }
+      margin-left: 0;
+      margin-top: 20px; }
       section.info .about .alumni li {
         font-size: 14px;
         display: inline-block;
