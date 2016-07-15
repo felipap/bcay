@@ -43,6 +43,13 @@
     "bio": "João Pedro graduated in 2016 with a B.A. in <strong>Economics</strong>. At Yale, he was involved in the <strong>International Relations Association</strong>, was the <strong>president for the BCY</strong>, served as <strong>head counselor for OIS</strong>, and worked in the <strong>Elmseed Enterprise Fund</strong>. He is <strong>interested in public policy</strong> and will pursue a career in finance after Yale.",
     "picture": "jp.png"
   },
+  "vini": {
+    "name": "Vinícius Canto Costa",
+    "class": "Morse, Class of 2019",
+    "from": "Rio de Janeiro.",
+    "bio": "Vini is widely regarded as the nicest person at Yale right now.",
+    "picture": "vini.png"
+  },
 
   "andre": {
     "name": "André Lucas de Melo",
